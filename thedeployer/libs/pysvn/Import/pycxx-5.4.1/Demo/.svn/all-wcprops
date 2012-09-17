@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/i-a6/!svn/ver/13/thedeployer/libs/pysvn/Import/pycxx-5.4.1/Demo
+END
+pycxx_iter.cxx
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/i-a6/!svn/ver/13/thedeployer/libs/pysvn/Import/pycxx-5.4.1/Demo/pycxx_iter.cxx
+END
+test_example.py
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/i-a6/!svn/ver/13/thedeployer/libs/pysvn/Import/pycxx-5.4.1/Demo/test_example.py
+END
+python.cxx
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/i-a6/!svn/ver/13/thedeployer/libs/pysvn/Import/pycxx-5.4.1/Demo/python.cxx
+END
+range.hxx
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/i-a6/!svn/ver/13/thedeployer/libs/pysvn/Import/pycxx-5.4.1/Demo/range.hxx
+END
+pycxx_iter.hxx
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/i-a6/!svn/ver/13/thedeployer/libs/pysvn/Import/pycxx-5.4.1/Demo/pycxx_iter.hxx
+END
+test_pycxx_iter.py
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/i-a6/!svn/ver/13/thedeployer/libs/pysvn/Import/pycxx-5.4.1/Demo/test_pycxx_iter.py
+END
+setup.py
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/i-a6/!svn/ver/13/thedeployer/libs/pysvn/Import/pycxx-5.4.1/Demo/setup.py
+END
+example.def
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/i-a6/!svn/ver/13/thedeployer/libs/pysvn/Import/pycxx-5.4.1/Demo/example.def
+END
+example.cxx
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/i-a6/!svn/ver/13/thedeployer/libs/pysvn/Import/pycxx-5.4.1/Demo/example.cxx
+END
+range.cxx
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/i-a6/!svn/ver/13/thedeployer/libs/pysvn/Import/pycxx-5.4.1/Demo/range.cxx
+END
+rangetest.cxx
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/i-a6/!svn/ver/13/thedeployer/libs/pysvn/Import/pycxx-5.4.1/Demo/rangetest.cxx
+END

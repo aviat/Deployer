@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--Created with Liquid XML Studio 6.1.15.0 - FREE Community Edition (http://www.liquid-technologies.com)-->
+<xs:schema elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="project">
+    <xs:annotation />
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="defaults" type="defaultsType">
+          <xs:annotation>
+            <xs:documentation>The tag "defaults" is the parent tag of one or more "default" tags. Defaults are a way of defining values for specific variables, like the number of times to retry executing a command if the command did not explicity specify a retry count.</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element minOccurs="0" maxOccurs="1" name="variables" type="variablesType" />
+        <xs:element minOccurs="1" maxOccurs="1" name="servers" type="serversType" />
+        <xs:element minOccurs="1" maxOccurs="1" name="targets" type="targetsType" />
+        <xs:element minOccurs="0" maxOccurs="1" name="filesets" type="filesetsType" />
+      </xs:sequence>
+      <xs:attribute name="name">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:minLength value="1" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="projectType" />
+  <xs:complexType name="defaultsType">
+    <xs:sequence>
+      <xs:element minOccurs="1" maxOccurs="unbounded" name="default" type="defaultType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="defaultType">
+    <xs:attribute name="name" use="required">
+      <xs:simpleType>
+        <xs:restriction base="xs:string">
+          <xs:minLength value="1" />
+          <xs:pattern value="[A-Za-z0-9.-_]+" />
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+    <xs:attribute name="value" use="required">
+      <xs:simpleType>
+        <xs:restriction base="xs:string">
+          <xs:minLength value="1" />
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+  </xs:complexType>
+  <xs:complexType name="argumentType">
+    <xs:attribute name="name" use="required">
+      <xs:simpleType>
+        <xs:restriction base="xs:string">
+          <xs:minLength value="1" />
+          <xs:pattern value="[A-Za-z0-9.-_]+" />
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+    <xs:attribute default="1" name="required" type="xs:boolean" use="optional" />
+  </xs:complexType>
+  <xs:complexType name="propertiesType">
+    <xs:attribute name="file" use="required">
+      <xs:simpleType>
+        <xs:restriction base="xs:string">
+          <xs:minLength value="1" />
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+  </xs:complexType>
+  <xs:complexType name="variablesType">
+    <xs:all>
+      <xs:element minOccurs="0" name="argument" type="argumentType" />
+      <xs:element minOccurs="0" name="properties" type="propertiesType" />
+    </xs:all>
+  </xs:complexType>
+  <xs:complexType name="serversType">
+    <xs:choice>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ftp" type="ftpType" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="sftp" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ssh" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="mysql" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="subversion" />
+      <xs:element minOccurs="0" maxOccurs="1" name="local" type="localType" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="web" type="webType" />
+    </xs:choice>
+  </xs:complexType>
+  <xs:complexType name="ftpType">
+    <xs:attribute name="host" use="required">
+      <xs:simpleType>
+        <xs:restriction base="xs:string">
+          <xs:minLength value="1" />
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+    <xs:attribute default="21" name="port" use="optional">
+      <xs:simpleType>
+        <xs:restriction base="xs:integer">
+          <xs:maxInclusive value="65535" />
+          <xs:minInclusive value="0" />
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+    <xs:attribute name="username" use="optional">
+      <xs:simpleType>
+        <xs:restriction base="xs:string">
+          <xs:minLength value="1" />
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+    <xs:attribute name="password" use="optional">
+      <xs:simpleType>
+        <xs:restriction base="xs:string">
+          <xs:minLength value="1" />
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+    <xs:attribute name="root" use="optional">
+      <xs:simpleType>
+        <xs:restriction base="xs:string">
+          <xs:minLength value="1" />
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+    <xs:attribute name="webserver" type="xs:string" use="optional" />
+    <xs:attribute name="id" use="required">
+      <xs:simpleType>
+        <xs:restriction base="xs:string">
+          <xs:pattern value="[A-Za-z0-9.-_]+" />
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+  </xs:complexType>
+  <xs:complexType name="targetsType">
+    <xs:sequence>
+      <xs:element minOccurs="1" maxOccurs="unbounded" name="target">
+        <xs:complexType>
+          <xs:complexContent mixed="false">
+            <xs:extension base="targetType">
+              <xs:attribute name="name" use="required">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:minLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:attribute>
+              <xs:attribute name="depends" use="optional">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:minLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:attribute>
+            </xs:extension>
+          </xs:complexContent>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="targetType">
+    <xs:sequence>
+      <xs:element minOccurs="1" maxOccurs="unbounded" name="task">
+        <xs:complexType>
+          <xs:complexContent mixed="false">
+            <xs:extension base="taskType" />
+          </xs:complexContent>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+    <xs:attribute name="name" use="required">
+      <xs:simpleType>
+        <xs:restriction base="xs:string">
+          <xs:minLength value="1" />
+          <xs:pattern value="[A-Za-z0-9.-_]+" />
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+    <xs:attribute name="depends" use="optional">
+      <xs:simpleType>
+        <xs:restriction base="xs:string">
+          <xs:minLength value="1" />
+          <xs:pattern value="[A-Za-z0-9.-_]+" />
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+  </xs:complexType>
+  <xs:complexType name="taskType">
+    <xs:sequence>
+      <xs:element name="execute" />
+      <xs:element name="copy" />
+    </xs:sequence>
+    <xs:attribute name="name" use="required">
+      <xs:simpleType>
+        <xs:restriction base="xs:string">
+          <xs:minLength value="1" />
+          <xs:pattern value="[A-Za-z0-9.-_]+" />
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+    <xs:attribute name="depends" use="optional">
+      <xs:simpleType>
+        <xs:restriction base="xs:string">
+          <xs:minLength value="1" />
+          <xs:pattern value="[A-Za-z0-9.-_]+" />
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+  </xs:complexType>
+  <xs:complexType name="commandType" />
+  <xs:complexType name="webType">
+    <xs:attribute name="id" use="required">
+      <xs:simpleType>
+        <xs:restriction base="xs:string">
+          <xs:pattern value="[A-Za-z0-9.-_]+" />
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+    <xs:attribute name="address" type="xs:string" use="optional" />
+    <xs:attribute default="80" name="port" use="optional">
+      <xs:simpleType>
+        <xs:restriction base="xs:integer">
+          <xs:maxInclusive value="65535" />
+          <xs:minInclusive value="0" />
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+    <xs:attribute name="document_root" type="xs:string" />
+  </xs:complexType>
+  <xs:complexType name="filesetsType">
+    <xs:sequence minOccurs="1" maxOccurs="unbounded">
+      <xs:element name="fileset" type="filesetType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="filesetType">
+    <xs:attribute name="name" use="required">
+      <xs:simpleType>
+        <xs:restriction base="xs:string">
+          <xs:pattern value="[A-Za-z0-9.-_]+" />
+          <xs:minLength value="1" />
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+  </xs:complexType>
+  <xs:complexType name="fileType">
+    <xs:attribute name="directory" use="optional" />
+    <xs:attribute name="pattern" use="required">
+      <xs:simpleType>
+        <xs:restriction base="xs:string">
+          <xs:minLength value="1" />
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+  </xs:complexType>
+  <xs:complexType name="localType">
+    <xs:attribute name="id" use="required">
+      <xs:simpleType>
+        <xs:restriction base="xs:string">
+          <xs:minLength value="1" />
+          <xs:pattern value="[A-Za-z0-9.-_]+" />
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+    <xs:attribute name="root" type="xs:string" use="optional" />
+  </xs:complexType>
+</xs:schema>

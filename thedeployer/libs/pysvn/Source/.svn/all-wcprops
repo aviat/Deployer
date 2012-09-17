@@ -1,0 +1,257 @@
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/i-a6/!svn/ver/13/thedeployer/libs/pysvn/Source
+END
+pysvn_profile.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/i-a6/!svn/ver/13/thedeployer/libs/pysvn/Source/pysvn_profile.cpp
+END
+pysvn_client_cmd_export.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/i-a6/!svn/ver/13/thedeployer/libs/pysvn/Source/pysvn_client_cmd_export.cpp
+END
+pysvn_version.hpp.template
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/i-a6/!svn/ver/13/thedeployer/libs/pysvn/Source/pysvn_version.hpp.template
+END
+pysvn_client_cmd_lock.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/i-a6/!svn/ver/13/thedeployer/libs/pysvn/Source/pysvn_client_cmd_lock.cpp
+END
+pysvn_client_cmd_info.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/i-a6/!svn/ver/13/thedeployer/libs/pysvn/Source/pysvn_client_cmd_info.cpp
+END
+pysvn_client_cmd_revprop.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/i-a6/!svn/ver/13/thedeployer/libs/pysvn/Source/pysvn_client_cmd_revprop.cpp
+END
+pysvn_callbacks.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/i-a6/!svn/ver/13/thedeployer/libs/pysvn/Source/pysvn_callbacks.cpp
+END
+pysvn_client_cmd_merge.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/i-a6/!svn/ver/13/thedeployer/libs/pysvn/Source/pysvn_client_cmd_merge.cpp
+END
+pysvn.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/i-a6/!svn/ver/13/thedeployer/libs/pysvn/Source/pysvn.cpp
+END
+run_msdev.cmd
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/i-a6/!svn/ver/13/thedeployer/libs/pysvn/Source/run_msdev.cmd
+END
+pysvn.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/i-a6/!svn/ver/13/thedeployer/libs/pysvn/Source/pysvn.hpp
+END
+pysvn_client_cmd_checkin.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/i-a6/!svn/ver/13/thedeployer/libs/pysvn/Source/pysvn_client_cmd_checkin.cpp
+END
+pysvn_client_cmd_diff.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/i-a6/!svn/ver/13/thedeployer/libs/pysvn/Source/pysvn_client_cmd_diff.cpp
+END
+pysvn-for-svn-1-5.vcproj
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/i-a6/!svn/ver/13/thedeployer/libs/pysvn/Source/pysvn-for-svn-1-5.vcproj
+END
+pysvn_client_cmd_copy.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/i-a6/!svn/ver/13/thedeployer/libs/pysvn/Source/pysvn_client_cmd_copy.cpp
+END
+pysvn_path.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/i-a6/!svn/ver/13/thedeployer/libs/pysvn/Source/pysvn_path.cpp
+END
+pysvn_client_cmd_list.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/i-a6/!svn/ver/13/thedeployer/libs/pysvn/Source/pysvn_client_cmd_list.cpp
+END
+pysvn_revision.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/i-a6/!svn/ver/13/thedeployer/libs/pysvn/Source/pysvn_revision.cpp
+END
+run_py.cmd
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/i-a6/!svn/ver/13/thedeployer/libs/pysvn/Source/run_py.cmd
+END
+pysvn_static_strings.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/i-a6/!svn/ver/13/thedeployer/libs/pysvn/Source/pysvn_static_strings.cpp
+END
+pysvn_client_cmd_prop.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/i-a6/!svn/ver/13/thedeployer/libs/pysvn/Source/pysvn_client_cmd_prop.cpp
+END
+pysvn_client_cmd_changelist.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/i-a6/!svn/ver/13/thedeployer/libs/pysvn/Source/pysvn_client_cmd_changelist.cpp
+END
+pysvn_arg_processing.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/i-a6/!svn/ver/13/thedeployer/libs/pysvn/Source/pysvn_arg_processing.cpp
+END
+pysvn_static_strings.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/i-a6/!svn/ver/13/thedeployer/libs/pysvn/Source/pysvn_static_strings.hpp
+END
+run_py.sh
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/i-a6/!svn/ver/13/thedeployer/libs/pysvn/Source/run_py.sh
+END
+setup.py
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/i-a6/!svn/ver/13/thedeployer/libs/pysvn/Source/setup.py
+END
+pysvn_client_cmd_add.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/i-a6/!svn/ver/13/thedeployer/libs/pysvn/Source/pysvn_client_cmd_add.cpp
+END
+pysvn.rc.template
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/i-a6/!svn/ver/13/thedeployer/libs/pysvn/Source/pysvn.rc.template
+END
+pysvn_common.mak
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/i-a6/!svn/ver/13/thedeployer/libs/pysvn/Source/pysvn_common.mak
+END
+pysvn_client.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/i-a6/!svn/ver/13/thedeployer/libs/pysvn/Source/pysvn_client.cpp
+END
+pysvn_svnenv.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/i-a6/!svn/ver/13/thedeployer/libs/pysvn/Source/pysvn_svnenv.cpp
+END
+pysvn-for-svn-1-4.sln
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/i-a6/!svn/ver/13/thedeployer/libs/pysvn/Source/pysvn-for-svn-1-4.sln
+END
+pysvn_client_cmd_switch.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/i-a6/!svn/ver/13/thedeployer/libs/pysvn/Source/pysvn_client_cmd_switch.cpp
+END
+pysvn-for-svn-1-5.sln
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/i-a6/!svn/ver/13/thedeployer/libs/pysvn/Source/pysvn-for-svn-1-5.sln
+END
+pysvn.dsp
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/i-a6/!svn/ver/13/thedeployer/libs/pysvn/Source/pysvn.dsp
+END
+pysvn_svnenv.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/i-a6/!svn/ver/13/thedeployer/libs/pysvn/Source/pysvn_svnenv.hpp
+END
+pysvn_transaction.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/i-a6/!svn/ver/13/thedeployer/libs/pysvn/Source/pysvn_transaction.cpp
+END
+pysvn-for-svn-1-4.vcproj
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/i-a6/!svn/ver/13/thedeployer/libs/pysvn/Source/pysvn-for-svn-1-4.vcproj
+END
+pysvn_enum_string.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/i-a6/!svn/ver/13/thedeployer/libs/pysvn/Source/pysvn_enum_string.cpp
+END
+pysvn_converters.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/i-a6/!svn/ver/13/thedeployer/libs/pysvn/Source/pysvn_converters.cpp
+END
+pysvn.dsw
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/i-a6/!svn/ver/13/thedeployer/libs/pysvn/Source/pysvn.dsw
+END
+run_devenv.cmd
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/i-a6/!svn/ver/13/thedeployer/libs/pysvn/Source/run_devenv.cmd
+END

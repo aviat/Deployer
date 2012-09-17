@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/i-a6/!svn/ver/152/thedeployer/packages
+END
+customexceptions.py
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/i-a6/!svn/ver/152/thedeployer/packages/customexceptions.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/i-a6/!svn/ver/1/thedeployer/packages/__init__.py
+END
+logger.py
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/i-a6/!svn/ver/151/thedeployer/packages/logger.py
+END
+application.py
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/i-a6/!svn/ver/97/thedeployer/packages/application.py
+END
+email.py
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/i-a6/!svn/ver/14/thedeployer/packages/email.py
+END

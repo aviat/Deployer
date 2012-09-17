@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/i-a6/!svn/ver/144/thedeployer/packages/commands/fs
+END
+chmod.py
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/i-a6/!svn/ver/136/thedeployer/packages/commands/fs/chmod.py
+END
+copy.py
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/i-a6/!svn/ver/143/thedeployer/packages/commands/fs/copy.py
+END
+compress.py
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/i-a6/!svn/ver/64/thedeployer/packages/commands/fs/compress.py
+END
+sync.py
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/i-a6/!svn/ver/14/thedeployer/packages/commands/fs/sync.py
+END
+chown.py
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/i-a6/!svn/ver/73/thedeployer/packages/commands/fs/chown.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/i-a6/!svn/ver/37/thedeployer/packages/commands/fs/__init__.py
+END
+delete.py
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/i-a6/!svn/ver/71/thedeployer/packages/commands/fs/delete.py
+END
+touch.py
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/i-a6/!svn/ver/14/thedeployer/packages/commands/fs/touch.py
+END
+decompress.py
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/i-a6/!svn/ver/62/thedeployer/packages/commands/fs/decompress.py
+END
+ftpsync.py
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/i-a6/!svn/ver/144/thedeployer/packages/commands/fs/ftpsync.py
+END
+mkdir.py
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/i-a6/!svn/ver/71/thedeployer/packages/commands/fs/mkdir.py
+END
+move.py
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/i-a6/!svn/ver/110/thedeployer/packages/commands/fs/move.py
+END

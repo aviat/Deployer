@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/i-a6/!svn/ver/143/thedeployer/packages/sync
+END
+rsync.py
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/i-a6/!svn/ver/135/thedeployer/packages/sync/rsync.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/i-a6/!svn/ver/115/thedeployer/packages/sync/__init__.py
+END
+ftpsync.py
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/i-a6/!svn/ver/143/thedeployer/packages/sync/ftpsync.py
+END

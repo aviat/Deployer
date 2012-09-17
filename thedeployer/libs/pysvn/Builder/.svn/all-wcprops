@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/i-a6/!svn/ver/13/thedeployer/libs/pysvn/Builder
+END
+version.info
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/i-a6/!svn/ver/13/thedeployer/libs/pysvn/Builder/version.info
+END
+freebsd.mak
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/i-a6/!svn/ver/13/thedeployer/libs/pysvn/Builder/freebsd.mak
+END
+macosx.mak
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/i-a6/!svn/ver/13/thedeployer/libs/pysvn/Builder/macosx.mak
+END
+brand_version.py
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/i-a6/!svn/ver/13/thedeployer/libs/pysvn/Builder/brand_version.py
+END
+builder_custom_init.cmd
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/i-a6/!svn/ver/13/thedeployer/libs/pysvn/Builder/builder_custom_init.cmd
+END
+linux.mak
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/i-a6/!svn/ver/13/thedeployer/libs/pysvn/Builder/linux.mak
+END
+win32-msvc71.mak
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/i-a6/!svn/ver/13/thedeployer/libs/pysvn/Builder/win32-msvc71.mak
+END
+builder_custom_init.sh
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/i-a6/!svn/ver/13/thedeployer/libs/pysvn/Builder/builder_custom_init.sh
+END

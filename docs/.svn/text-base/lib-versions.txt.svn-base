@@ -1,0 +1,11 @@
+paramiko;1.7.3;http://www.lag.net/paramiko/
+pysvn;1.6.0;http://pysvn.tigris.org/ 
+pexpect;2.3;http://pexpect.sourceforge.net/
+cwRsync;2.1.4;http://www.itefix.no/i2/node/10650
+
+dll
+pycrypto;2.0.1;http://www.voidspace.org.uk/python/modules.shtml#pycrypto
+
+python-crypto
+python-svn
+python-mysqldb

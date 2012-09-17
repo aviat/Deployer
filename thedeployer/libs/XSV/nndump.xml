@@ -1,0 +1,2510 @@
+<p:schema xmlns="http://www.w3.org/2001/05/XMLInfoset" xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.w3.org/2001/05/PSVInfosetExtension" xmlns:x="http://www.w3.org/2001/XMLSchema">
+<p:namespaceSchemaInformation schemaNamespace="http://www.w3.org/2001/XMLSchema">
+<p:atomic id="xsd..type.derivationControl" name="derivationControl" targetNamespace="http://www.w3.org/2001/XMLSchema">
+<p:atomic i:nil="true" ref="xsd..type.NMTOKEN"/>
+<p:atomic i:nil="true" ref="string"/>
+<p:pattern i:nil="true" ref="bip..2"/>
+<p:pattern i:nil="true" ref="bip..3"/>
+<p:enumeration value="substitution"/>
+<p:enumeration value="extension"/>
+<p:enumeration value="restriction"/>
+<p:enumeration value="list"/>
+<p:enumeration value="union"/>
+<p:whiteSpace fixed="false" value="collapse"/>
+</p:atomic>
+<p:atomic id="xsd..type.formChoice" name="formChoice" targetNamespace="http://www.w3.org/2001/XMLSchema">
+<p:atomic i:nil="true" ref="xsd..type.NMTOKEN"/>
+<p:atomic i:nil="true" ref="string"/>
+<p:pattern i:nil="true" ref="bip..2"/>
+<p:pattern i:nil="true" ref="bip..3"/>
+<p:enumeration value="qualified"/>
+<p:enumeration value="unqualified"/>
+<p:whiteSpace fixed="false" value="collapse"/>
+</p:atomic>
+<p:atomic id="xsd..type.public" name="public" targetNamespace="http://www.w3.org/2001/XMLSchema">
+<p:atomic i:nil="true" ref="xsd..type.token"/>
+<p:atomic i:nil="true" ref="string"/>
+<p:whiteSpace fixed="false" value="collapse"/>
+</p:atomic>
+<p:atomic id="xsd..type.reducedDerivationControl" name="reducedDerivationControl" targetNamespace="http://www.w3.org/2001/XMLSchema">
+<p:atomic i:nil="true" ref="xsd..type.derivationControl"/>
+<p:atomic i:nil="true" ref="string"/>
+<p:pattern i:nil="true" ref="bip..2"/>
+<p:pattern i:nil="true" ref="bip..3"/>
+<p:enumeration value="extension"/>
+<p:enumeration value="restriction"/>
+<p:whiteSpace fixed="false" value="collapse"/>
+</p:atomic>
+<p:atomic id="xsd..type.typeDerivationControl" name="typeDerivationControl" targetNamespace="http://www.w3.org/2001/XMLSchema">
+<p:atomic i:nil="true" ref="xsd..type.derivationControl"/>
+<p:atomic i:nil="true" ref="string"/>
+<p:pattern i:nil="true" ref="bip..2"/>
+<p:pattern i:nil="true" ref="bip..3"/>
+<p:enumeration value="extension"/>
+<p:enumeration value="restriction"/>
+<p:enumeration value="list"/>
+<p:enumeration value="union"/>
+<p:whiteSpace fixed="false" value="collapse"/>
+</p:atomic>
+<p:attributeGroupDefinition id="xsd..ag.defRef" name="defRef" targetNamespace="http://www.w3.org/2001/XMLSchema">
+<p:attributeUse required="false">
+<p:attributeDeclaration id="attr.ref.137" name="ref">
+<p:atomic i:nil="true" ref="QName"/>
+</p:attributeDeclaration>
+</p:attributeUse>
+<p:attributeUse required="false">
+<p:attributeDeclaration id="attr.name.135" name="name">
+<p:atomic i:nil="true" ref="xsd..type.NCName"/>
+</p:attributeDeclaration>
+</p:attributeUse>
+</p:attributeGroupDefinition>
+<p:attributeGroupDefinition id="xsd..ag.occurs" name="occurs" targetNamespace="http://www.w3.org/2001/XMLSchema">
+<p:attributeUse required="false">
+<p:attributeDeclaration id="attr.maxOccurs.131" name="maxOccurs">
+<p:union i:nil="true" ref="xsd..type.allNNI"/>
+</p:attributeDeclaration>
+<p:valueConstraint value="1" variety="default"/>
+</p:attributeUse>
+<p:attributeUse required="false">
+<p:attributeDeclaration id="attr.minOccurs.129" name="minOccurs">
+<p:atomic i:nil="true" ref="xsd..type.nonNegativeInteger"/>
+</p:attributeDeclaration>
+<p:valueConstraint value="1" variety="default"/>
+</p:attributeUse>
+</p:attributeGroupDefinition>
+<p:complexTypeDefinition abstract="false" derivationMethod="restriction" id="xsd..type.all" name="all" targetNamespace="http://www.w3.org/2001/XMLSchema">
+<p:complexTypeDefinition i:nil="true" ref="xsd..type.explicitGroup"/>
+<p:attributeUse required="false">
+<p:attributeDeclaration id="attr.maxOccurs.544" name="maxOccurs" scope="local">
+<p:union id="xsd..type._anon_543" targetNamespace="http://www.w3.org/2001/XMLSchema">
+<p:union i:nil="true" ref="xsd..type.allNNI"/>
+<p:enumeration value="1"/>
+<p:atomic id="xsd..type._anon_125" targetNamespace="http://www.w3.org/2001/XMLSchema">
+<p:atomic i:nil="true" ref="xsd..type.NMTOKEN"/>
+<p:atomic i:nil="true" ref="string"/>
+<p:pattern i:nil="true" ref="bip..2"/>
+<p:pattern i:nil="true" ref="bip..3"/>
+<p:enumeration value="unbounded"/>
+<p:whiteSpace fixed="false" value="collapse"/>
+</p:atomic>
+<p:atomic i:nil="true" ref="xsd..type.nonNegativeInteger"/>
+</p:union>
+</p:attributeDeclaration>
+<p:valueConstraint value="1" variety="default"/>
+</p:attributeUse>
+<p:attributeUse required="false">
+<p:attributeDeclaration id="attr.id.35" name="id" scope="local">
+<p:atomic i:nil="true" ref="xsd..type.ID"/>
+</p:attributeDeclaration>
+</p:attributeUse>
+<p:attributeUse required="false">
+<p:attributeDeclaration id="attr.minOccurs.539" name="minOccurs" scope="local">
+<p:atomic id="xsd..type._anon_538" targetNamespace="http://www.w3.org/2001/XMLSchema">
+<p:atomic i:nil="true" ref="xsd..type.nonNegativeInteger"/>
+<p:atomic i:nil="true" ref="decimal"/>
+<p:minInclusive fixed="false" value="0"/>
+<p:enumeration value="0"/>
+<p:enumeration value="1"/>
+<p:fractionDigits fixed="false" value="0"/>
+<p:whiteSpace fixed="true" value="collapse"/>
+</p:atomic>
+</p:attributeDeclaration>
+<p:valueConstraint value="1" variety="default"/>
+</p:attributeUse>
+<p:wildcard processContents="lax">
+<p:namespaceConstraint namespaces="http://www.w3.org/2001/XMLSchema ##none" variety="negative"/>
+</p:wildcard>
+<p:contentType variety="elementOnly">
+<p:particle maxOccurs="1" minOccurs="1">
+<p:modelGroup i:nil="true" ref="xsd..mg.allModel"/>
+</p:particle>
+</p:contentType>
+</p:complexTypeDefinition>
+<p:complexTypeDefinition abstract="false" derivationMethod="extension" id="xsd..type.annotated" name="annotated" targetNamespace="http://www.w3.org/2001/XMLSchema">
+<p:complexTypeDefinition i:nil="true" ref="xsd..type.openAttrs"/>
+<p:attributeUse required="false">
+<p:attributeDeclaration i:nil="true" name="id" ref="attr.id.35"/>
+</p:attributeUse>
+<p:wildcard processContents="lax">
+<p:namespaceConstraint namespaces="http://www.w3.org/2001/XMLSchema ##none" variety="negative"/>
+</p:wildcard>
+<p:contentType variety="elementOnly">
+<p:particle maxOccurs="1" minOccurs="1">
+<p:modelGroup compositor="sequence">
+<p:particle maxOccurs="1" minOccurs="0">
+<p:elementDeclaration i:nil="true" ref="xsd..elt.annotation"/>
+</p:particle>
+</p:modelGroup>
+</p:particle>
+</p:contentType>
+</p:complexTypeDefinition>
+<p:complexTypeDefinition abstract="false" derivationMethod="extension" id="xsd..type.attribute" name="attribute" targetNamespace="http://www.w3.org/2001/XMLSchema">
+<p:complexTypeDefinition i:nil="true" ref="xsd..type.annotated"/>
+<p:attributeUse required="false">
+<p:attributeDeclaration id="attr.use.179" name="use" scope="local">
+<p:atomic id="xsd..type._anon_178" targetNamespace="http://www.w3.org/2001/XMLSchema">
+<p:atomic i:nil="true" ref="xsd..type.NMTOKEN"/>
+<p:atomic i:nil="true" ref="string"/>
+<p:pattern i:nil="true" ref="bip..2"/>
+<p:pattern i:nil="true" ref="bip..3"/>
+<p:enumeration value="prohibited"/>
+<p:enumeration value="optional"/>
+<p:enumeration value="required"/>
+<p:whiteSpace fixed="false" value="collapse"/>
+</p:atomic>
+</p:attributeDeclaration>
+<p:valueConstraint value="optional" variety="default"/>
+</p:attributeUse>
+<p:attributeUse required="false">
+<p:attributeDeclaration id="attr.form.185" name="form" scope="local">
+<p:atomic i:nil="true" ref="xsd..type.formChoice"/>
+</p:attributeDeclaration>
+</p:attributeUse>
+<p:attributeUse required="false">
+<p:attributeDeclaration i:nil="true" name="ref" ref="attr.ref.137"/>
+</p:attributeUse>
+<p:attributeUse required="false">
+<p:attributeDeclaration i:nil="true" name="name" ref="attr.name.135"/>
+</p:attributeUse>
+<p:attributeUse required="false">
+<p:attributeDeclaration id="attr.fixed.183" name="fixed" scope="local">
+<p:atomic i:nil="true" ref="string"/>
+</p:attributeDeclaration>
+</p:attributeUse>
+<p:attributeUse required="false">
+<p:attributeDeclaration id="attr.default.181" name="default" scope="local">
+<p:atomic i:nil="true" ref="string"/>
+</p:attributeDeclaration>
+</p:attributeUse>
+<p:attributeUse required="false">
+<p:attributeDeclaration i:nil="true" name="id" ref="attr.id.35"/>
+</p:attributeUse>
+<p:attributeUse required="false">
+<p:attributeDeclaration id="attr.type.172" name="type" scope="local">
+<p:atomic i:nil="true" ref="QName"/>
+</p:attributeDeclaration>
+</p:attributeUse>
+<p:wildcard processContents="lax">
+<p:namespaceConstraint namespaces="http://www.w3.org/2001/XMLSchema ##none" variety="negative"/>
+</p:wildcard>
+<p:contentType variety="elementOnly">
+<p:particle maxOccurs="1" minOccurs="1">
+<p:modelGroup compositor="sequence">
+<p:particle maxOccurs="1" minOccurs="0">
+<p:elementDeclaration i:nil="true" ref="xsd..elt.annotation"/>
+</p:particle>
+<p:particle maxOccurs="1" minOccurs="1">
+<p:modelGroup compositor="sequence">
+<p:particle maxOccurs="1" minOccurs="0">
+<p:elementDeclaration abstract="false" id="xsd..elt.simpleType.167" name="simpleType" nillable="false" scope="local" targetNamespace="http://www.w3.org/2001/XMLSchema">
+<p:complexTypeDefinition i:nil="true" ref="xsd..type.localSimpleType"/>
+</p:elementDeclaration>
+</p:particle>
+</p:modelGroup>
+</p:particle>
+</p:modelGroup>
+</p:particle>
+</p:contentType>
+</p:complexTypeDefinition>
+<p:complexTypeDefinition abstract="true" derivationMethod="extension" id="xsd..type.attributeGroup" name="attributeGroup" targetNamespace="http://www.w3.org/2001/XMLSchema">
+<p:complexTypeDefinition i:nil="true" ref="xsd..type.annotated"/>
+<p:attributeUse required="false">
+<p:attributeDeclaration i:nil="true" name="id" ref="attr.id.35"/>
+</p:attributeUse>
+<p:attributeUse required="false">
+<p:attributeDeclaration i:nil="true" name="ref" ref="attr.ref.137"/>
+</p:attributeUse>
+<p:attributeUse required="false">
+<p:attributeDeclaration i:nil="true" name="name" ref="attr.name.135"/>
+</p:attributeUse>
+<p:wildcard processContents="lax">
+<p:namespaceConstraint namespaces="http://www.w3.org/2001/XMLSchema ##none" variety="negative"/>
+</p:wildcard>
+<p:contentType variety="elementOnly">
+<p:particle maxOccurs="1" minOccurs="1">
+<p:modelGroup compositor="sequence">
+<p:particle maxOccurs="1" minOccurs="0">
+<p:elementDeclaration i:nil="true" ref="xsd..elt.annotation"/>
+</p:particle>
+<p:particle maxOccurs="1" minOccurs="1">
+<p:modelGroup i:nil="true" ref="xsd..mg.attrDecls"/>
+</p:particle>
+</p:modelGroup>
+</p:particle>
+</p:contentType>
+</p:complexTypeDefinition>
+<p:complexTypeDefinition abstract="false" derivationMethod="restriction" id="xsd..type.attributeGroupRef" name="attributeGroupRef" targetNamespace="http://www.w3.org/2001/XMLSchema">
+<p:complexTypeDefinition i:nil="true" ref="xsd..type.attributeGroup"/>
+<p:attributeUse required="false">
+<p:attributeDeclaration i:nil="true" name="id" ref="attr.id.35"/>
+</p:attributeUse>
+<p:attributeUse required="true">
+<p:attributeDeclaration id="attr.ref.607" name="ref" scope="local">
+<p:atomic i:nil="true" ref="QName"/>
+</p:attributeDeclaration>
+</p:attributeUse>
+<p:wildcard processContents="lax">
+<p:namespaceConstraint namespaces="http://www.w3.org/2001/XMLSchema ##none" variety="negative"/>
+</p:wildcard>
+<p:contentType variety="elementOnly">
+<p:particle maxOccurs="1" minOccurs="1">
+<p:modelGroup compositor="sequence">
+<p:particle maxOccurs="1" minOccurs="0">
+<p:elementDeclaration i:nil="true" ref="xsd..elt.annotation"/>
+</p:particle>
+</p:modelGroup>
+</p:particle>
+</p:contentType>
+</p:complexTypeDefinition>
+<p:complexTypeDefinition abstract="false" derivationMethod="restriction" id="xsd..type.complexRestrictionType" name="complexRestrictionType" targetNamespace="http://www.w3.org/2001/XMLSchema">
+<p:complexTypeDefinition i:nil="true" ref="xsd..type.restrictionType"/>
+<p:attributeUse required="true">
+<p:attributeDeclaration id="attr.base.269" name="base" scope="local">
+<p:atomic i:nil="true" ref="QName"/>
+</p:attributeDeclaration>
+</p:attributeUse>
+<p:attributeUse required="false">
+<p:attributeDeclaration i:nil="true" name="id" ref="attr.id.35"/>
+</p:attributeUse>
+<p:wildcard processContents="lax">
+<p:namespaceConstraint namespaces="http://www.w3.org/2001/XMLSchema ##none" variety="negative"/>
+</p:wildcard>
+<p:contentType variety="elementOnly">
+<p:particle maxOccurs="1" minOccurs="1">
+<p:modelGroup compositor="sequence">
+<p:particle maxOccurs="1" minOccurs="0">
+<p:elementDeclaration i:nil="true" ref="xsd..elt.annotation"/>
+</p:particle>
+<p:particle maxOccurs="1" minOccurs="0">
+<p:modelGroup compositor="choice">
+<p:particle maxOccurs="1" minOccurs="1">
+<p:modelGroup i:nil="true" ref="xsd..mg.typeDefParticle"/>
+</p:particle>
+</p:modelGroup>
+</p:particle>
+<p:particle maxOccurs="1" minOccurs="1">
+<p:modelGroup i:nil="true" ref="xsd..mg.attrDecls"/>
+</p:particle>
+</p:modelGroup>
+</p:particle>
+</p:contentType>
+</p:complexTypeDefinition>
+<p:complexTypeDefinition abstract="true" derivationMethod="extension" id="xsd..type.complexType" name="complexType" targetNamespace="http://www.w3.org/2001/XMLSchema">
+<p:complexTypeDefinition i:nil="true" ref="xsd..type.annotated"/>
+<p:attributeUse required="false">
+<p:attributeDeclaration i:nil="true" name="id" ref="attr.id.35"/>
+</p:attributeUse>
+<p:attributeUse required="false">
+<p:attributeDeclaration id="attr.name.226" name="name" scope="local">
+<p:atomic i:nil="true" ref="xsd..type.NCName"/>
+</p:attributeDeclaration>
+</p:attributeUse>
+<p:attributeUse required="false">
+<p:attributeDeclaration id="attr.abstract.231" name="abstract" scope="local">
+<p:atomic i:nil="true" ref="boolean"/>
+</p:attributeDeclaration>
+<p:valueConstraint value="false" variety="default"/>
+</p:attributeUse>
+<p:attributeUse required="false">
+<p:attributeDeclaration id="attr.mixed.229" name="mixed" scope="local">
+<p:atomic i:nil="true" ref="boolean"/>
+</p:attributeDeclaration>
+<p:valueConstraint value="false" variety="default"/>
+</p:attributeUse>
+<p:attributeUse required="false">
+<p:attributeDeclaration id="attr.block.235" name="block" scope="local">
+<p:union i:nil="true" ref="xsd..type.derivationSet"/>
+</p:attributeDeclaration>
+</p:attributeUse>
+<p:attributeUse required="false">
+<p:attributeDeclaration id="attr.final.233" name="final" scope="local">
+<p:union i:nil="true" ref="xsd..type.derivationSet"/>
+</p:attributeDeclaration>
+</p:attributeUse>
+<p:wildcard processContents="lax">
+<p:namespaceConstraint namespaces="http://www.w3.org/2001/XMLSchema ##none" variety="negative"/>
+</p:wildcard>
+<p:contentType variety="elementOnly">
+<p:particle maxOccurs="1" minOccurs="1">
+<p:modelGroup compositor="sequence">
+<p:particle maxOccurs="1" minOccurs="0">
+<p:elementDeclaration i:nil="true" ref="xsd..elt.annotation"/>
+</p:particle>
+<p:particle maxOccurs="1" minOccurs="1">
+<p:modelGroup i:nil="true" ref="xsd..mg.complexTypeModel"/>
+</p:particle>
+</p:modelGroup>
+</p:particle>
+</p:contentType>
+</p:complexTypeDefinition>
+<p:complexTypeDefinition abstract="true" derivationMethod="extension" id="xsd..type.element" name="element" targetNamespace="http://www.w3.org/2001/XMLSchema">
+<p:complexTypeDefinition i:nil="true" ref="xsd..type.annotated"/>
+<p:attributeUse required="false">
+<p:attributeDeclaration id="attr.form.373" name="form" scope="local">
+<p:atomic i:nil="true" ref="xsd..type.formChoice"/>
+</p:attributeDeclaration>
+</p:attributeUse>
+<p:attributeUse required="false">
+<p:attributeDeclaration id="attr.fixed.363" name="fixed" scope="local">
+<p:atomic i:nil="true" ref="string"/>
+</p:attributeDeclaration>
+</p:attributeUse>
+<p:attributeUse required="false">
+<p:attributeDeclaration i:nil="true" name="maxOccurs" ref="attr.maxOccurs.131"/>
+<p:valueConstraint value="1" variety="default"/>
+</p:attributeUse>
+<p:attributeUse required="false">
+<p:attributeDeclaration id="attr.substitutionGroup.358" name="substitutionGroup" scope="local">
+<p:atomic i:nil="true" ref="QName"/>
+</p:attributeDeclaration>
+</p:attributeUse>
+<p:attributeUse required="false">
+<p:attributeDeclaration id="attr.block.371" name="block" scope="local">
+<p:union i:nil="true" ref="xsd..type.blockSet"/>
+</p:attributeDeclaration>
+</p:attributeUse>
+<p:attributeUse required="false">
+<p:attributeDeclaration i:nil="true" name="ref" ref="attr.ref.137"/>
+</p:attributeUse>
+<p:attributeUse required="false">
+<p:attributeDeclaration id="attr.final.369" name="final" scope="local">
+<p:union i:nil="true" ref="xsd..type.derivationSet"/>
+</p:attributeDeclaration>
+</p:attributeUse>
+<p:attributeUse required="false">
+<p:attributeDeclaration i:nil="true" name="minOccurs" ref="attr.minOccurs.129"/>
+<p:valueConstraint value="1" variety="default"/>
+</p:attributeUse>
+<p:attributeUse required="false">
+<p:attributeDeclaration id="attr.type.356" name="type" scope="local">
+<p:atomic i:nil="true" ref="QName"/>
+</p:attributeDeclaration>
+</p:attributeUse>
+<p:attributeUse required="false">
+<p:attributeDeclaration i:nil="true" name="name" ref="attr.name.135"/>
+</p:attributeUse>
+<p:attributeUse required="false">
+<p:attributeDeclaration id="attr.abstract.367" name="abstract" scope="local">
+<p:atomic i:nil="true" ref="boolean"/>
+</p:attributeDeclaration>
+<p:valueConstraint value="false" variety="default"/>
+</p:attributeUse>
+<p:attributeUse required="false">
+<p:attributeDeclaration id="attr.nillable.365" name="nillable" scope="local">
+<p:atomic i:nil="true" ref="boolean"/>
+</p:attributeDeclaration>
+<p:valueConstraint value="false" variety="default"/>
+</p:attributeUse>
+<p:attributeUse required="false">
+<p:attributeDeclaration id="attr.default.361" name="default" scope="local">
+<p:atomic i:nil="true" ref="string"/>
+</p:attributeDeclaration>
+</p:attributeUse>
+<p:attributeUse required="false">
+<p:attributeDeclaration i:nil="true" name="id" ref="attr.id.35"/>
+</p:attributeUse>
+<p:wildcard processContents="lax">
+<p:namespaceConstraint namespaces="http://www.w3.org/2001/XMLSchema ##none" variety="negative"/>
+</p:wildcard>
+<p:contentType variety="elementOnly">
+<p:particle maxOccurs="1" minOccurs="1">
+<p:modelGroup compositor="sequence">
+<p:particle maxOccurs="1" minOccurs="0">
+<p:elementDeclaration i:nil="true" ref="xsd..elt.annotation"/>
+</p:particle>
+<p:particle maxOccurs="1" minOccurs="1">
+<p:modelGroup compositor="sequence">
+<p:particle maxOccurs="1" minOccurs="0">
+<p:modelGroup compositor="choice">
+<p:particle maxOccurs="1" minOccurs="1">
+<p:elementDeclaration abstract="false" id="xsd..elt.simpleType.346" name="simpleType" nillable="false" scope="local" targetNamespace="http://www.w3.org/2001/XMLSchema">
+<p:complexTypeDefinition i:nil="true" ref="xsd..type.localSimpleType"/>
+</p:elementDeclaration>
+</p:particle>
+<p:particle maxOccurs="1" minOccurs="1">
+<p:elementDeclaration abstract="false" id="xsd..elt.complexType.348" name="complexType" nillable="false" scope="local" targetNamespace="http://www.w3.org/2001/XMLSchema">
+<p:complexTypeDefinition i:nil="true" ref="xsd..type.localComplexType"/>
+</p:elementDeclaration>
+</p:particle>
+</p:modelGroup>
+</p:particle>
+<p:particle maxOccurs="unbounded" minOccurs="0">
+<p:modelGroup i:nil="true" ref="xsd..mg.identityConstraint"/>
+</p:particle>
+</p:modelGroup>
+</p:particle>
+</p:modelGroup>
+</p:particle>
+</p:contentType>
+</p:complexTypeDefinition>
+<p:complexTypeDefinition abstract="false" derivationMethod="restriction" id="xsd..type.explicitGroup" name="explicitGroup" targetNamespace="http://www.w3.org/2001/XMLSchema">
+<p:complexTypeDefinition i:nil="true" ref="xsd..type.group"/>
+<p:attributeUse required="false">
+<p:attributeDeclaration i:nil="true" name="maxOccurs" ref="attr.maxOccurs.131"/>
+<p:valueConstraint value="1" variety="default"/>
+</p:attributeUse>
+<p:attributeUse required="false">
+<p:attributeDeclaration i:nil="true" name="minOccurs" ref="attr.minOccurs.129"/>
+<p:valueConstraint value="1" variety="default"/>
+</p:attributeUse>
+<p:attributeUse required="false">
+<p:attributeDeclaration i:nil="true" name="id" ref="attr.id.35"/>
+</p:attributeUse>
+<p:wildcard processContents="lax">
+<p:namespaceConstraint namespaces="http://www.w3.org/2001/XMLSchema ##none" variety="negative"/>
+</p:wildcard>
+<p:contentType variety="elementOnly">
+<p:particle maxOccurs="1" minOccurs="1">
+<p:modelGroup compositor="sequence">
+<p:particle maxOccurs="1" minOccurs="0">
+<p:elementDeclaration i:nil="true" ref="xsd..elt.annotation"/>
+</p:particle>
+<p:particle maxOccurs="unbounded" minOccurs="0">
+<p:modelGroup i:nil="true" ref="xsd..mg.nestedParticle"/>
+</p:particle>
+</p:modelGroup>
+</p:particle>
+</p:contentType>
+</p:complexTypeDefinition>
+<p:complexTypeDefinition abstract="false" derivationMethod="extension" id="xsd..type.extensionType" name="extensionType" targetNamespace="http://www.w3.org/2001/XMLSchema">
+<p:complexTypeDefinition i:nil="true" ref="xsd..type.annotated"/>
+<p:attributeUse required="true">
+<p:attributeDeclaration id="attr.base.287" name="base" scope="local">
+<p:atomic i:nil="true" ref="QName"/>
+</p:attributeDeclaration>
+</p:attributeUse>
+<p:attributeUse required="false">
+<p:attributeDeclaration i:nil="true" name="id" ref="attr.id.35"/>
+</p:attributeUse>
+<p:wildcard processContents="lax">
+<p:namespaceConstraint namespaces="http://www.w3.org/2001/XMLSchema ##none" variety="negative"/>
+</p:wildcard>
+<p:contentType variety="elementOnly">
+<p:particle maxOccurs="1" minOccurs="1">
+<p:modelGroup compositor="sequence">
+<p:particle maxOccurs="1" minOccurs="0">
+<p:elementDeclaration i:nil="true" ref="xsd..elt.annotation"/>
+</p:particle>
+<p:particle maxOccurs="1" minOccurs="1">
+<p:modelGroup compositor="sequence">
+<p:particle maxOccurs="1" minOccurs="0">
+<p:modelGroup i:nil="true" ref="xsd..mg.typeDefParticle"/>
+</p:particle>
+<p:particle maxOccurs="1" minOccurs="1">
+<p:modelGroup i:nil="true" ref="xsd..mg.attrDecls"/>
+</p:particle>
+</p:modelGroup>
+</p:particle>
+</p:modelGroup>
+</p:particle>
+</p:contentType>
+</p:complexTypeDefinition>
+<p:complexTypeDefinition abstract="false" derivationMethod="extension" id="xsd..type.facet" name="facet" targetNamespace="http://www.w3.org/2001/XMLSchema">
+<p:complexTypeDefinition i:nil="true" ref="xsd..type.annotated"/>
+<p:attributeUse required="false">
+<p:attributeDeclaration id="attr.fixed.1029" name="fixed" scope="local">
+<p:atomic i:nil="true" ref="boolean"/>
+</p:attributeDeclaration>
+<p:valueConstraint value="false" variety="default"/>
+</p:attributeUse>
+<p:attributeUse required="false">
+<p:attributeDeclaration i:nil="true" name="id" ref="attr.id.35"/>
+</p:attributeUse>
+<p:attributeUse required="true">
+<p:attributeDeclaration id="attr.value.1027" name="value" scope="local">
+<p:atomic i:nil="true" ref="anySimpleType"/>
+</p:attributeDeclaration>
+</p:attributeUse>
+<p:wildcard processContents="lax">
+<p:namespaceConstraint namespaces="http://www.w3.org/2001/XMLSchema ##none" variety="negative"/>
+</p:wildcard>
+<p:contentType variety="elementOnly">
+<p:particle maxOccurs="1" minOccurs="1">
+<p:modelGroup compositor="sequence">
+<p:particle maxOccurs="1" minOccurs="0">
+<p:elementDeclaration i:nil="true" ref="xsd..elt.annotation"/>
+</p:particle>
+</p:modelGroup>
+</p:particle>
+</p:contentType>
+</p:complexTypeDefinition>
+<p:complexTypeDefinition abstract="true" derivationMethod="extension" id="xsd..type.group" name="group" targetNamespace="http://www.w3.org/2001/XMLSchema">
+<p:complexTypeDefinition i:nil="true" ref="xsd..type.annotated"/>
+<p:attributeUse required="false">
+<p:attributeDeclaration i:nil="true" name="minOccurs" ref="attr.minOccurs.129"/>
+<p:valueConstraint value="1" variety="default"/>
+</p:attributeUse>
+<p:attributeUse required="false">
+<p:attributeDeclaration i:nil="true" name="name" ref="attr.name.135"/>
+</p:attributeUse>
+<p:attributeUse required="false">
+<p:attributeDeclaration i:nil="true" name="maxOccurs" ref="attr.maxOccurs.131"/>
+<p:valueConstraint value="1" variety="default"/>
+</p:attributeUse>
+<p:attributeUse required="false">
+<p:attributeDeclaration i:nil="true" name="ref" ref="attr.ref.137"/>
+</p:attributeUse>
+<p:attributeUse required="false">
+<p:attributeDeclaration i:nil="true" name="id" ref="attr.id.35"/>
+</p:attributeUse>
+<p:wildcard processContents="lax">
+<p:namespaceConstraint namespaces="http://www.w3.org/2001/XMLSchema ##none" variety="negative"/>
+</p:wildcard>
+<p:contentType variety="elementOnly">
+<p:particle maxOccurs="1" minOccurs="1">
+<p:modelGroup compositor="sequence">
+<p:particle maxOccurs="1" minOccurs="0">
+<p:elementDeclaration i:nil="true" ref="xsd..elt.annotation"/>
+</p:particle>
+<p:particle maxOccurs="unbounded" minOccurs="0">
+<p:modelGroup i:nil="true" ref="xsd..mg.particle"/>
+</p:particle>
+</p:modelGroup>
+</p:particle>
+</p:contentType>
+</p:complexTypeDefinition>
+<p:complexTypeDefinition abstract="false" derivationMethod="restriction" id="xsd..type.groupRef" name="groupRef" targetNamespace="http://www.w3.org/2001/XMLSchema">
+<p:complexTypeDefinition i:nil="true" ref="xsd..type.realGroup"/>
+<p:attributeUse required="false">
+<p:attributeDeclaration i:nil="true" name="maxOccurs" ref="attr.maxOccurs.131"/>
+<p:valueConstraint value="1" variety="default"/>
+</p:attributeUse>
+<p:attributeUse required="false">
+<p:attributeDeclaration i:nil="true" name="minOccurs" ref="attr.minOccurs.129"/>
+<p:valueConstraint value="1" variety="default"/>
+</p:attributeUse>
+<p:attributeUse required="true">
+<p:attributeDeclaration id="attr.ref.469" name="ref" scope="local">
+<p:atomic i:nil="true" ref="QName"/>
+</p:attributeDeclaration>
+</p:attributeUse>
+<p:attributeUse required="false">
+<p:attributeDeclaration i:nil="true" name="id" ref="attr.id.35"/>
+</p:attributeUse>
+<p:wildcard processContents="lax">
+<p:namespaceConstraint namespaces="http://www.w3.org/2001/XMLSchema ##none" variety="negative"/>
+</p:wildcard>
+<p:contentType variety="elementOnly">
+<p:particle maxOccurs="1" minOccurs="1">
+<p:modelGroup compositor="sequence">
+<p:particle maxOccurs="1" minOccurs="0">
+<p:elementDeclaration i:nil="true" ref="xsd..elt.annotation"/>
+</p:particle>
+</p:modelGroup>
+</p:particle>
+</p:contentType>
+</p:complexTypeDefinition>
+<p:complexTypeDefinition abstract="false" derivationMethod="extension" id="xsd..type.keybase" name="keybase" targetNamespace="http://www.w3.org/2001/XMLSchema">
+<p:complexTypeDefinition i:nil="true" ref="xsd..type.annotated"/>
+<p:attributeUse required="false">
+<p:attributeDeclaration i:nil="true" name="id" ref="attr.id.35"/>
+</p:attributeUse>
+<p:attributeUse required="true">
+<p:attributeDeclaration id="attr.name.663" name="name" scope="local">
+<p:atomic i:nil="true" ref="xsd..type.NCName"/>
+</p:attributeDeclaration>
+</p:attributeUse>
+<p:wildcard processContents="lax">
+<p:namespaceConstraint namespaces="http://www.w3.org/2001/XMLSchema ##none" variety="negative"/>
+</p:wildcard>
+<p:contentType variety="elementOnly">
+<p:particle maxOccurs="1" minOccurs="1">
+<p:modelGroup compositor="sequence">
+<p:particle maxOccurs="1" minOccurs="0">
+<p:elementDeclaration i:nil="true" ref="xsd..elt.annotation"/>
+</p:particle>
+<p:particle maxOccurs="1" minOccurs="1">
+<p:modelGroup compositor="sequence">
+<p:particle maxOccurs="1" minOccurs="1">
+<p:elementDeclaration i:nil="true" ref="xsd..elt.selector"/>
+</p:particle>
+<p:particle maxOccurs="unbounded" minOccurs="1">
+<p:elementDeclaration i:nil="true" ref="xsd..elt.field"/>
+</p:particle>
+</p:modelGroup>
+</p:particle>
+</p:modelGroup>
+</p:particle>
+</p:contentType>
+</p:complexTypeDefinition>
+<p:complexTypeDefinition abstract="false" derivationMethod="restriction" id="xsd..type.localComplexType" name="localComplexType" targetNamespace="http://www.w3.org/2001/XMLSchema">
+<p:complexTypeDefinition i:nil="true" ref="xsd..type.complexType"/>
+<p:attributeUse required="false">
+<p:attributeDeclaration i:nil="true" name="mixed" ref="attr.mixed.229"/>
+<p:valueConstraint value="false" variety="default"/>
+</p:attributeUse>
+<p:attributeUse required="false">
+<p:attributeDeclaration i:nil="true" name="id" ref="attr.id.35"/>
+</p:attributeUse>
+<p:wildcard processContents="lax">
+<p:namespaceConstraint namespaces="http://www.w3.org/2001/XMLSchema ##none" variety="negative"/>
+</p:wildcard>
+<p:contentType variety="elementOnly">
+<p:particle maxOccurs="1" minOccurs="1">
+<p:modelGroup compositor="sequence">
+<p:particle maxOccurs="1" minOccurs="0">
+<p:elementDeclaration i:nil="true" ref="xsd..elt.annotation"/>
+</p:particle>
+<p:particle maxOccurs="1" minOccurs="1">
+<p:modelGroup i:nil="true" ref="xsd..mg.complexTypeModel"/>
+</p:particle>
+</p:modelGroup>
+</p:particle>
+</p:contentType>
+</p:complexTypeDefinition>
+<p:complexTypeDefinition abstract="false" derivationMethod="restriction" id="xsd..type.localElement" name="localElement" targetNamespace="http://www.w3.org/2001/XMLSchema">
+<p:complexTypeDefinition i:nil="true" ref="xsd..type.element"/>
+<p:attributeUse required="false">
+<p:attributeDeclaration i:nil="true" name="fixed" ref="attr.fixed.363"/>
+</p:attributeUse>
+<p:attributeUse required="false">
+<p:attributeDeclaration i:nil="true" name="maxOccurs" ref="attr.maxOccurs.131"/>
+<p:valueConstraint value="1" variety="default"/>
+</p:attributeUse>
+<p:attributeUse required="false">
+<p:attributeDeclaration i:nil="true" name="block" ref="attr.block.371"/>
+</p:attributeUse>
+<p:attributeUse required="false">
+<p:attributeDeclaration i:nil="true" name="type" ref="attr.type.356"/>
+</p:attributeUse>
+<p:attributeUse required="false">
+<p:attributeDeclaration i:nil="true" name="id" ref="attr.id.35"/>
+</p:attributeUse>
+<p:attributeUse required="false">
+<p:attributeDeclaration i:nil="true" name="form" ref="attr.form.373"/>
+</p:attributeUse>
+<p:attributeUse required="false">
+<p:attributeDeclaration i:nil="true" name="ref" ref="attr.ref.137"/>
+</p:attributeUse>
+<p:attributeUse required="false">
+<p:attributeDeclaration i:nil="true" name="name" ref="attr.name.135"/>
+</p:attributeUse>
+<p:attributeUse required="false">
+<p:attributeDeclaration i:nil="true" name="minOccurs" ref="attr.minOccurs.129"/>
+<p:valueConstraint value="1" variety="default"/>
+</p:attributeUse>
+<p:attributeUse required="false">
+<p:attributeDeclaration i:nil="true" name="default" ref="attr.default.361"/>
+</p:attributeUse>
+<p:attributeUse required="false">
+<p:attributeDeclaration i:nil="true" name="nillable" ref="attr.nillable.365"/>
+<p:valueConstraint value="false" variety="default"/>
+</p:attributeUse>
+<p:wildcard processContents="lax">
+<p:namespaceConstraint namespaces="http://www.w3.org/2001/XMLSchema ##none" variety="negative"/>
+</p:wildcard>
+<p:contentType variety="elementOnly">
+<p:particle maxOccurs="1" minOccurs="1">
+<p:modelGroup compositor="sequence">
+<p:particle maxOccurs="1" minOccurs="0">
+<p:elementDeclaration i:nil="true" ref="xsd..elt.annotation"/>
+</p:particle>
+<p:particle maxOccurs="1" minOccurs="0">
+<p:modelGroup compositor="choice">
+<p:particle maxOccurs="1" minOccurs="1">
+<p:elementDeclaration abstract="false" id="xsd..elt.simpleType.400" name="simpleType" nillable="false" scope="local" targetNamespace="http://www.w3.org/2001/XMLSchema">
+<p:complexTypeDefinition i:nil="true" ref="xsd..type.localSimpleType"/>
+</p:elementDeclaration>
+</p:particle>
+<p:particle maxOccurs="1" minOccurs="1">
+<p:elementDeclaration abstract="false" id="xsd..elt.complexType.402" name="complexType" nillable="false" scope="local" targetNamespace="http://www.w3.org/2001/XMLSchema">
+<p:complexTypeDefinition i:nil="true" ref="xsd..type.localComplexType"/>
+</p:elementDeclaration>
+</p:particle>
+</p:modelGroup>
+</p:particle>
+<p:particle maxOccurs="unbounded" minOccurs="0">
+<p:modelGroup i:nil="true" ref="xsd..mg.identityConstraint"/>
+</p:particle>
+</p:modelGroup>
+</p:particle>
+</p:contentType>
+</p:complexTypeDefinition>
+<p:complexTypeDefinition abstract="false" derivationMethod="restriction" id="xsd..type.localSimpleType" name="localSimpleType" targetNamespace="http://www.w3.org/2001/XMLSchema">
+<p:complexTypeDefinition i:nil="true" ref="xsd..type.simpleType"/>
+<p:attributeUse required="false">
+<p:attributeDeclaration i:nil="true" name="id" ref="attr.id.35"/>
+</p:attributeUse>
+<p:wildcard processContents="lax">
+<p:namespaceConstraint namespaces="http://www.w3.org/2001/XMLSchema ##none" variety="negative"/>
+</p:wildcard>
+<p:contentType variety="elementOnly">
+<p:particle maxOccurs="1" minOccurs="1">
+<p:modelGroup compositor="sequence">
+<p:particle maxOccurs="1" minOccurs="0">
+<p:elementDeclaration i:nil="true" ref="xsd..elt.annotation"/>
+</p:particle>
+<p:particle maxOccurs="1" minOccurs="1">
+<p:modelGroup i:nil="true" ref="xsd..mg.simpleDerivation"/>
+</p:particle>
+</p:modelGroup>
+</p:particle>
+</p:contentType>
+</p:complexTypeDefinition>
+<p:complexTypeDefinition abstract="false" derivationMethod="restriction" id="xsd..type.namedAttributeGroup" name="namedAttributeGroup" targetNamespace="http://www.w3.org/2001/XMLSchema">
+<p:complexTypeDefinition i:nil="true" ref="xsd..type.attributeGroup"/>
+<p:attributeUse required="false">
+<p:attributeDeclaration i:nil="true" name="id" ref="attr.id.35"/>
+</p:attributeUse>
+<p:attributeUse required="true">
+<p:attributeDeclaration id="attr.name.597" name="name" scope="local">
+<p:atomic i:nil="true" ref="xsd..type.NCName"/>
+</p:attributeDeclaration>
+</p:attributeUse>
+<p:wildcard processContents="lax">
+<p:namespaceConstraint namespaces="http://www.w3.org/2001/XMLSchema ##none" variety="negative"/>
+</p:wildcard>
+<p:contentType variety="elementOnly">
+<p:particle maxOccurs="1" minOccurs="1">
+<p:modelGroup compositor="sequence">
+<p:particle maxOccurs="1" minOccurs="0">
+<p:elementDeclaration i:nil="true" ref="xsd..elt.annotation"/>
+</p:particle>
+<p:particle maxOccurs="1" minOccurs="1">
+<p:modelGroup i:nil="true" ref="xsd..mg.attrDecls"/>
+</p:particle>
+</p:modelGroup>
+</p:particle>
+</p:contentType>
+</p:complexTypeDefinition>
+<p:complexTypeDefinition abstract="false" derivationMethod="restriction" id="xsd..type.namedGroup" name="namedGroup" targetNamespace="http://www.w3.org/2001/XMLSchema">
+<p:complexTypeDefinition i:nil="true" ref="xsd..type.realGroup"/>
+<p:attributeUse required="true">
+<p:attributeDeclaration id="attr.name.455" name="name" scope="local">
+<p:atomic i:nil="true" ref="xsd..type.NCName"/>
+</p:attributeDeclaration>
+</p:attributeUse>
+<p:attributeUse required="false">
+<p:attributeDeclaration i:nil="true" name="id" ref="attr.id.35"/>
+</p:attributeUse>
+<p:wildcard processContents="lax">
+<p:namespaceConstraint namespaces="http://www.w3.org/2001/XMLSchema ##none" variety="negative"/>
+</p:wildcard>
+<p:contentType variety="elementOnly">
+<p:particle maxOccurs="1" minOccurs="1">
+<p:modelGroup compositor="sequence">
+<p:particle maxOccurs="1" minOccurs="0">
+<p:elementDeclaration i:nil="true" ref="xsd..elt.annotation"/>
+</p:particle>
+<p:particle maxOccurs="1" minOccurs="1">
+<p:modelGroup compositor="choice">
+<p:particle maxOccurs="1" minOccurs="1">
+<p:elementDeclaration abstract="false" id="xsd..elt.all.445" name="all" nillable="false" scope="local" targetNamespace="http://www.w3.org/2001/XMLSchema">
+<p:complexTypeDefinition abstract="false" derivationMethod="restriction" id="xsd..type._anon_444" targetNamespace="http://www.w3.org/2001/XMLSchema">
+<p:complexTypeDefinition i:nil="true" ref="xsd..type.all"/>
+<p:attributeUse required="false">
+<p:attributeDeclaration i:nil="true" name="id" ref="attr.id.35"/>
+</p:attributeUse>
+<p:wildcard processContents="lax">
+<p:namespaceConstraint namespaces="http://www.w3.org/2001/XMLSchema ##none" variety="negative"/>
+</p:wildcard>
+<p:contentType variety="elementOnly">
+<p:particle maxOccurs="1" minOccurs="1">
+<p:modelGroup i:nil="true" ref="xsd..mg.allModel"/>
+</p:particle>
+</p:contentType>
+</p:complexTypeDefinition>
+</p:elementDeclaration>
+</p:particle>
+<p:particle maxOccurs="1" minOccurs="1">
+<p:elementDeclaration abstract="false" id="xsd..elt.choice.447" name="choice" nillable="false" scope="local" targetNamespace="http://www.w3.org/2001/XMLSchema">
+<p:complexTypeDefinition i:nil="true" ref="xsd..type.simpleExplicitGroup"/>
+</p:elementDeclaration>
+</p:particle>
+<p:particle maxOccurs="1" minOccurs="1">
+<p:elementDeclaration abstract="false" id="xsd..elt.sequence.449" name="sequence" nillable="false" scope="local" targetNamespace="http://www.w3.org/2001/XMLSchema">
+<p:complexTypeDefinition i:nil="true" ref="xsd..type.simpleExplicitGroup"/>
+</p:elementDeclaration>
+</p:particle>
+</p:modelGroup>
+</p:particle>
+</p:modelGroup>
+</p:particle>
+</p:contentType>
+</p:complexTypeDefinition>
+<p:complexTypeDefinition abstract="false" derivationMethod="restriction" id="xsd..type.narrowMaxMin" name="narrowMaxMin" targetNamespace="http://www.w3.org/2001/XMLSchema">
+<p:complexTypeDefinition i:nil="true" ref="xsd..type.localElement"/>
+<p:attributeUse required="false">
+<p:attributeDeclaration i:nil="true" name="fixed" ref="attr.fixed.363"/>
+</p:attributeUse>
+<p:attributeUse required="false">
+<p:attributeDeclaration id="attr.maxOccurs.528" name="maxOccurs" scope="local">
+<p:union id="xsd..type._anon_527" targetNamespace="http://www.w3.org/2001/XMLSchema">
+<p:union i:nil="true" ref="xsd..type.allNNI"/>
+<p:enumeration value="0"/>
+<p:enumeration value="1"/>
+<p:atomic i:nil="true" ref="xsd..type._anon_125"/>
+<p:atomic i:nil="true" ref="xsd..type.nonNegativeInteger"/>
+</p:union>
+</p:attributeDeclaration>
+<p:valueConstraint value="1" variety="default"/>
+</p:attributeUse>
+<p:attributeUse required="false">
+<p:attributeDeclaration i:nil="true" name="block" ref="attr.block.371"/>
+</p:attributeUse>
+<p:attributeUse required="false">
+<p:attributeDeclaration i:nil="true" name="ref" ref="attr.ref.137"/>
+</p:attributeUse>
+<p:attributeUse required="false">
+<p:attributeDeclaration i:nil="true" name="id" ref="attr.id.35"/>
+</p:attributeUse>
+<p:attributeUse required="false">
+<p:attributeDeclaration id="attr.minOccurs.522" name="minOccurs" scope="local">
+<p:atomic id="xsd..type._anon_521" targetNamespace="http://www.w3.org/2001/XMLSchema">
+<p:atomic i:nil="true" ref="xsd..type.nonNegativeInteger"/>
+<p:atomic i:nil="true" ref="decimal"/>
+<p:minInclusive fixed="false" value="0"/>
+<p:enumeration value="0"/>
+<p:enumeration value="1"/>
+<p:fractionDigits fixed="false" value="0"/>
+<p:whiteSpace fixed="true" value="collapse"/>
+</p:atomic>
+</p:attributeDeclaration>
+<p:valueConstraint value="1" variety="default"/>
+</p:attributeUse>
+<p:attributeUse required="false">
+<p:attributeDeclaration i:nil="true" name="type" ref="attr.type.356"/>
+</p:attributeUse>
+<p:attributeUse required="false">
+<p:attributeDeclaration i:nil="true" name="name" ref="attr.name.135"/>
+</p:attributeUse>
+<p:attributeUse required="false">
+<p:attributeDeclaration i:nil="true" name="form" ref="attr.form.373"/>
+</p:attributeUse>
+<p:attributeUse required="false">
+<p:attributeDeclaration i:nil="true" name="default" ref="attr.default.361"/>
+</p:attributeUse>
+<p:attributeUse required="false">
+<p:attributeDeclaration i:nil="true" name="nillable" ref="attr.nillable.365"/>
+<p:valueConstraint value="false" variety="default"/>
+</p:attributeUse>
+<p:wildcard processContents="lax">
+<p:namespaceConstraint namespaces="http://www.w3.org/2001/XMLSchema ##none" variety="negative"/>
+</p:wildcard>
+<p:contentType variety="elementOnly">
+<p:particle maxOccurs="1" minOccurs="1">
+<p:modelGroup compositor="sequence">
+<p:particle maxOccurs="1" minOccurs="0">
+<p:elementDeclaration i:nil="true" ref="xsd..elt.annotation"/>
+</p:particle>
+<p:particle maxOccurs="1" minOccurs="0">
+<p:modelGroup compositor="choice">
+<p:particle maxOccurs="1" minOccurs="1">
+<p:elementDeclaration abstract="false" id="xsd..elt.simpleType.509" name="simpleType" nillable="false" scope="local" targetNamespace="http://www.w3.org/2001/XMLSchema">
+<p:complexTypeDefinition i:nil="true" ref="xsd..type.localSimpleType"/>
+</p:elementDeclaration>
+</p:particle>
+<p:particle maxOccurs="1" minOccurs="1">
+<p:elementDeclaration abstract="false" id="xsd..elt.complexType.511" name="complexType" nillable="false" scope="local" targetNamespace="http://www.w3.org/2001/XMLSchema">
+<p:complexTypeDefinition i:nil="true" ref="xsd..type.localComplexType"/>
+</p:elementDeclaration>
+</p:particle>
+</p:modelGroup>
+</p:particle>
+<p:particle maxOccurs="unbounded" minOccurs="0">
+<p:modelGroup i:nil="true" ref="xsd..mg.identityConstraint"/>
+</p:particle>
+</p:modelGroup>
+</p:particle>
+</p:contentType>
+</p:complexTypeDefinition>
+<p:complexTypeDefinition abstract="false" derivationMethod="restriction" id="xsd..type.noFixedFacet" name="noFixedFacet" targetNamespace="http://www.w3.org/2001/XMLSchema">
+<p:complexTypeDefinition i:nil="true" ref="xsd..type.facet"/>
+<p:attributeUse required="false">
+<p:attributeDeclaration i:nil="true" name="id" ref="attr.id.35"/>
+</p:attributeUse>
+<p:attributeUse required="true">
+<p:attributeDeclaration i:nil="true" name="value" ref="attr.value.1027"/>
+</p:attributeUse>
+<p:wildcard processContents="lax">
+<p:namespaceConstraint namespaces="http://www.w3.org/2001/XMLSchema ##none" variety="negative"/>
+</p:wildcard>
+<p:contentType variety="elementOnly">
+<p:particle maxOccurs="1" minOccurs="1">
+<p:modelGroup compositor="sequence">
+<p:particle maxOccurs="1" minOccurs="0">
+<p:elementDeclaration i:nil="true" ref="xsd..elt.annotation"/>
+</p:particle>
+</p:modelGroup>
+</p:particle>
+</p:contentType>
+</p:complexTypeDefinition>
+<p:complexTypeDefinition abstract="false" derivationMethod="restriction" id="xsd..type.numFacet" name="numFacet" targetNamespace="http://www.w3.org/2001/XMLSchema">
+<p:complexTypeDefinition i:nil="true" ref="xsd..type.facet"/>
+<p:attributeUse required="false">
+<p:attributeDeclaration i:nil="true" name="fixed" ref="attr.fixed.1029"/>
+<p:valueConstraint value="false" variety="default"/>
+</p:attributeUse>
+<p:attributeUse required="false">
+<p:attributeDeclaration i:nil="true" name="id" ref="attr.id.35"/>
+</p:attributeUse>
+<p:attributeUse required="true">
+<p:attributeDeclaration id="attr.value.1051" name="value" scope="local">
+<p:atomic i:nil="true" ref="xsd..type.nonNegativeInteger"/>
+</p:attributeDeclaration>
+</p:attributeUse>
+<p:wildcard processContents="lax">
+<p:namespaceConstraint namespaces="http://www.w3.org/2001/XMLSchema ##none" variety="negative"/>
+</p:wildcard>
+<p:contentType variety="elementOnly">
+<p:particle maxOccurs="1" minOccurs="1">
+<p:modelGroup compositor="sequence">
+<p:particle maxOccurs="1" minOccurs="0">
+<p:elementDeclaration i:nil="true" ref="xsd..elt.annotation"/>
+</p:particle>
+</p:modelGroup>
+</p:particle>
+</p:contentType>
+</p:complexTypeDefinition>
+<p:complexTypeDefinition abstract="false" derivationMethod="restriction" id="xsd..type.openAttrs" name="openAttrs" targetNamespace="http://www.w3.org/2001/XMLSchema">
+<p:complexTypeDefinition i:nil="true" ref="xsd..type.anyType"/>
+<p:wildcard processContents="lax">
+<p:namespaceConstraint namespaces="http://www.w3.org/2001/XMLSchema ##none" variety="negative"/>
+</p:wildcard>
+<p:contentType variety="empty"/>
+</p:complexTypeDefinition>
+<p:complexTypeDefinition abstract="false" derivationMethod="restriction" id="xsd..type.realGroup" name="realGroup" targetNamespace="http://www.w3.org/2001/XMLSchema">
+<p:complexTypeDefinition i:nil="true" ref="xsd..type.group"/>
+<p:attributeUse required="false">
+<p:attributeDeclaration i:nil="true" name="minOccurs" ref="attr.minOccurs.129"/>
+<p:valueConstraint value="1" variety="default"/>
+</p:attributeUse>
+<p:attributeUse required="false">
+<p:attributeDeclaration i:nil="true" name="name" ref="attr.name.135"/>
+</p:attributeUse>
+<p:attributeUse required="false">
+<p:attributeDeclaration i:nil="true" name="maxOccurs" ref="attr.maxOccurs.131"/>
+<p:valueConstraint value="1" variety="default"/>
+</p:attributeUse>
+<p:attributeUse required="false">
+<p:attributeDeclaration i:nil="true" name="ref" ref="attr.ref.137"/>
+</p:attributeUse>
+<p:attributeUse required="false">
+<p:attributeDeclaration i:nil="true" name="id" ref="attr.id.35"/>
+</p:attributeUse>
+<p:wildcard processContents="lax">
+<p:namespaceConstraint namespaces="http://www.w3.org/2001/XMLSchema ##none" variety="negative"/>
+</p:wildcard>
+<p:contentType variety="elementOnly">
+<p:particle maxOccurs="1" minOccurs="1">
+<p:modelGroup compositor="sequence">
+<p:particle maxOccurs="1" minOccurs="0">
+<p:elementDeclaration i:nil="true" ref="xsd..elt.annotation"/>
+</p:particle>
+<p:particle maxOccurs="1" minOccurs="0">
+<p:modelGroup compositor="choice">
+<p:particle maxOccurs="1" minOccurs="1">
+<p:elementDeclaration i:nil="true" ref="xsd..elt.all"/>
+</p:particle>
+<p:particle maxOccurs="1" minOccurs="1">
+<p:elementDeclaration i:nil="true" ref="xsd..elt.choice"/>
+</p:particle>
+<p:particle maxOccurs="1" minOccurs="1">
+<p:elementDeclaration i:nil="true" ref="xsd..elt.sequence"/>
+</p:particle>
+</p:modelGroup>
+</p:particle>
+</p:modelGroup>
+</p:particle>
+</p:contentType>
+</p:complexTypeDefinition>
+<p:complexTypeDefinition abstract="false" derivationMethod="extension" id="xsd..type.restrictionType" name="restrictionType" targetNamespace="http://www.w3.org/2001/XMLSchema">
+<p:complexTypeDefinition i:nil="true" ref="xsd..type.annotated"/>
+<p:attributeUse required="true">
+<p:attributeDeclaration i:nil="true" name="base" ref="attr.base.269"/>
+</p:attributeUse>
+<p:attributeUse required="false">
+<p:attributeDeclaration i:nil="true" name="id" ref="attr.id.35"/>
+</p:attributeUse>
+<p:wildcard processContents="lax">
+<p:namespaceConstraint namespaces="http://www.w3.org/2001/XMLSchema ##none" variety="negative"/>
+</p:wildcard>
+<p:contentType variety="elementOnly">
+<p:particle maxOccurs="1" minOccurs="1">
+<p:modelGroup compositor="sequence">
+<p:particle maxOccurs="1" minOccurs="0">
+<p:elementDeclaration i:nil="true" ref="xsd..elt.annotation"/>
+</p:particle>
+<p:particle maxOccurs="1" minOccurs="1">
+<p:modelGroup compositor="sequence">
+<p:particle maxOccurs="1" minOccurs="0">
+<p:modelGroup compositor="choice">
+<p:particle maxOccurs="1" minOccurs="1">
+<p:modelGroup i:nil="true" ref="xsd..mg.typeDefParticle"/>
+</p:particle>
+<p:particle maxOccurs="1" minOccurs="1">
+<p:modelGroup i:nil="true" ref="xsd..mg.simpleRestrictionModel"/>
+</p:particle>
+</p:modelGroup>
+</p:particle>
+<p:particle maxOccurs="1" minOccurs="1">
+<p:modelGroup i:nil="true" ref="xsd..mg.attrDecls"/>
+</p:particle>
+</p:modelGroup>
+</p:particle>
+</p:modelGroup>
+</p:particle>
+</p:contentType>
+</p:complexTypeDefinition>
+<p:complexTypeDefinition abstract="false" derivationMethod="restriction" id="xsd..type.simpleExplicitGroup" name="simpleExplicitGroup" targetNamespace="http://www.w3.org/2001/XMLSchema">
+<p:complexTypeDefinition i:nil="true" ref="xsd..type.explicitGroup"/>
+<p:attributeUse required="false">
+<p:attributeDeclaration i:nil="true" name="id" ref="attr.id.35"/>
+</p:attributeUse>
+<p:wildcard processContents="lax">
+<p:namespaceConstraint namespaces="http://www.w3.org/2001/XMLSchema ##none" variety="negative"/>
+</p:wildcard>
+<p:contentType variety="elementOnly">
+<p:particle maxOccurs="1" minOccurs="1">
+<p:modelGroup compositor="sequence">
+<p:particle maxOccurs="1" minOccurs="0">
+<p:elementDeclaration i:nil="true" ref="xsd..elt.annotation"/>
+</p:particle>
+<p:particle maxOccurs="unbounded" minOccurs="0">
+<p:modelGroup i:nil="true" ref="xsd..mg.nestedParticle"/>
+</p:particle>
+</p:modelGroup>
+</p:particle>
+</p:contentType>
+</p:complexTypeDefinition>
+<p:complexTypeDefinition abstract="false" derivationMethod="restriction" id="xsd..type.simpleExtensionType" name="simpleExtensionType" targetNamespace="http://www.w3.org/2001/XMLSchema">
+<p:complexTypeDefinition i:nil="true" ref="xsd..type.extensionType"/>
+<p:attributeUse required="true">
+<p:attributeDeclaration i:nil="true" name="base" ref="attr.base.287"/>
+</p:attributeUse>
+<p:attributeUse required="false">
+<p:attributeDeclaration i:nil="true" name="id" ref="attr.id.35"/>
+</p:attributeUse>
+<p:wildcard processContents="lax">
+<p:namespaceConstraint namespaces="http://www.w3.org/2001/XMLSchema ##none" variety="negative"/>
+</p:wildcard>
+<p:contentType variety="elementOnly">
+<p:particle maxOccurs="1" minOccurs="1">
+<p:modelGroup compositor="sequence">
+<p:particle maxOccurs="1" minOccurs="0">
+<p:elementDeclaration i:nil="true" ref="xsd..elt.annotation"/>
+</p:particle>
+<p:particle maxOccurs="1" minOccurs="1">
+<p:modelGroup i:nil="true" ref="xsd..mg.attrDecls"/>
+</p:particle>
+</p:modelGroup>
+</p:particle>
+</p:contentType>
+</p:complexTypeDefinition>
+<p:complexTypeDefinition abstract="false" derivationMethod="restriction" id="xsd..type.simpleRestrictionType" name="simpleRestrictionType" targetNamespace="http://www.w3.org/2001/XMLSchema">
+<p:complexTypeDefinition i:nil="true" ref="xsd..type.restrictionType"/>
+<p:attributeUse required="true">
+<p:attributeDeclaration i:nil="true" name="base" ref="attr.base.269"/>
+</p:attributeUse>
+<p:attributeUse required="false">
+<p:attributeDeclaration i:nil="true" name="id" ref="attr.id.35"/>
+</p:attributeUse>
+<p:wildcard processContents="lax">
+<p:namespaceConstraint namespaces="http://www.w3.org/2001/XMLSchema ##none" variety="negative"/>
+</p:wildcard>
+<p:contentType variety="elementOnly">
+<p:particle maxOccurs="1" minOccurs="1">
+<p:modelGroup compositor="sequence">
+<p:particle maxOccurs="1" minOccurs="0">
+<p:elementDeclaration i:nil="true" ref="xsd..elt.annotation"/>
+</p:particle>
+<p:particle maxOccurs="1" minOccurs="0">
+<p:modelGroup compositor="choice">
+<p:particle maxOccurs="1" minOccurs="1">
+<p:modelGroup i:nil="true" ref="xsd..mg.simpleRestrictionModel"/>
+</p:particle>
+</p:modelGroup>
+</p:particle>
+<p:particle maxOccurs="1" minOccurs="1">
+<p:modelGroup i:nil="true" ref="xsd..mg.attrDecls"/>
+</p:particle>
+</p:modelGroup>
+</p:particle>
+</p:contentType>
+</p:complexTypeDefinition>
+<p:complexTypeDefinition abstract="true" derivationMethod="extension" id="xsd..type.simpleType" name="simpleType" targetNamespace="http://www.w3.org/2001/XMLSchema">
+<p:complexTypeDefinition i:nil="true" ref="xsd..type.annotated"/>
+<p:attributeUse required="false">
+<p:attributeDeclaration i:nil="true" name="id" ref="attr.id.35"/>
+</p:attributeUse>
+<p:attributeUse required="false">
+<p:attributeDeclaration id="attr.name.954" name="name" scope="local">
+<p:atomic i:nil="true" ref="xsd..type.NCName"/>
+</p:attributeDeclaration>
+</p:attributeUse>
+<p:attributeUse required="false">
+<p:attributeDeclaration id="attr.final.951" name="final" scope="local">
+<p:union i:nil="true" ref="xsd..type.simpleDerivationSet"/>
+</p:attributeDeclaration>
+</p:attributeUse>
+<p:wildcard processContents="lax">
+<p:namespaceConstraint namespaces="http://www.w3.org/2001/XMLSchema ##none" variety="negative"/>
+</p:wildcard>
+<p:contentType variety="elementOnly">
+<p:particle maxOccurs="1" minOccurs="1">
+<p:modelGroup compositor="sequence">
+<p:particle maxOccurs="1" minOccurs="0">
+<p:elementDeclaration i:nil="true" ref="xsd..elt.annotation"/>
+</p:particle>
+<p:particle maxOccurs="1" minOccurs="1">
+<p:modelGroup i:nil="true" ref="xsd..mg.simpleDerivation"/>
+</p:particle>
+</p:modelGroup>
+</p:particle>
+</p:contentType>
+</p:complexTypeDefinition>
+<p:complexTypeDefinition abstract="false" derivationMethod="restriction" id="xsd..type.topLevelAttribute" name="topLevelAttribute" targetNamespace="http://www.w3.org/2001/XMLSchema">
+<p:complexTypeDefinition i:nil="true" ref="xsd..type.attribute"/>
+<p:attributeUse required="true">
+<p:attributeDeclaration id="attr.name.199" name="name" scope="local">
+<p:atomic i:nil="true" ref="xsd..type.NCName"/>
+</p:attributeDeclaration>
+</p:attributeUse>
+<p:attributeUse required="false">
+<p:attributeDeclaration i:nil="true" name="fixed" ref="attr.fixed.183"/>
+</p:attributeUse>
+<p:attributeUse required="false">
+<p:attributeDeclaration i:nil="true" name="default" ref="attr.default.181"/>
+</p:attributeUse>
+<p:attributeUse required="false">
+<p:attributeDeclaration i:nil="true" name="type" ref="attr.type.172"/>
+</p:attributeUse>
+<p:attributeUse required="false">
+<p:attributeDeclaration i:nil="true" name="id" ref="attr.id.35"/>
+</p:attributeUse>
+<p:wildcard processContents="lax">
+<p:namespaceConstraint namespaces="http://www.w3.org/2001/XMLSchema ##none" variety="negative"/>
+</p:wildcard>
+<p:contentType variety="elementOnly">
+<p:particle maxOccurs="1" minOccurs="1">
+<p:modelGroup compositor="sequence">
+<p:particle maxOccurs="1" minOccurs="0">
+<p:elementDeclaration i:nil="true" ref="xsd..elt.annotation"/>
+</p:particle>
+<p:particle maxOccurs="1" minOccurs="0">
+<p:elementDeclaration abstract="false" id="xsd..elt.simpleType.189" name="simpleType" nillable="false" scope="local" targetNamespace="http://www.w3.org/2001/XMLSchema">
+<p:complexTypeDefinition i:nil="true" ref="xsd..type.localSimpleType"/>
+</p:elementDeclaration>
+</p:particle>
+</p:modelGroup>
+</p:particle>
+</p:contentType>
+</p:complexTypeDefinition>
+<p:complexTypeDefinition abstract="false" derivationMethod="restriction" id="xsd..type.topLevelComplexType" name="topLevelComplexType" targetNamespace="http://www.w3.org/2001/XMLSchema">
+<p:complexTypeDefinition i:nil="true" ref="xsd..type.complexType"/>
+<p:attributeUse required="false">
+<p:attributeDeclaration i:nil="true" name="final" ref="attr.final.233"/>
+</p:attributeUse>
+<p:attributeUse required="true">
+<p:attributeDeclaration id="attr.name.242" name="name" scope="local">
+<p:atomic i:nil="true" ref="xsd..type.NCName"/>
+</p:attributeDeclaration>
+</p:attributeUse>
+<p:attributeUse required="false">
+<p:attributeDeclaration i:nil="true" name="abstract" ref="attr.abstract.231"/>
+<p:valueConstraint value="false" variety="default"/>
+</p:attributeUse>
+<p:attributeUse required="false">
+<p:attributeDeclaration i:nil="true" name="mixed" ref="attr.mixed.229"/>
+<p:valueConstraint value="false" variety="default"/>
+</p:attributeUse>
+<p:attributeUse required="false">
+<p:attributeDeclaration i:nil="true" name="block" ref="attr.block.235"/>
+</p:attributeUse>
+<p:attributeUse required="false">
+<p:attributeDeclaration i:nil="true" name="id" ref="attr.id.35"/>
+</p:attributeUse>
+<p:wildcard processContents="lax">
+<p:namespaceConstraint namespaces="http://www.w3.org/2001/XMLSchema ##none" variety="negative"/>
+</p:wildcard>
+<p:contentType variety="elementOnly">
+<p:particle maxOccurs="1" minOccurs="1">
+<p:modelGroup compositor="sequence">
+<p:particle maxOccurs="1" minOccurs="0">
+<p:elementDeclaration i:nil="true" ref="xsd..elt.annotation"/>
+</p:particle>
+<p:particle maxOccurs="1" minOccurs="1">
+<p:modelGroup i:nil="true" ref="xsd..mg.complexTypeModel"/>
+</p:particle>
+</p:modelGroup>
+</p:particle>
+</p:contentType>
+</p:complexTypeDefinition>
+<p:complexTypeDefinition abstract="false" derivationMethod="restriction" id="xsd..type.topLevelElement" name="topLevelElement" targetNamespace="http://www.w3.org/2001/XMLSchema">
+<p:complexTypeDefinition i:nil="true" ref="xsd..type.element"/>
+<p:attributeUse required="false">
+<p:attributeDeclaration i:nil="true" name="fixed" ref="attr.fixed.363"/>
+</p:attributeUse>
+<p:attributeUse required="false">
+<p:attributeDeclaration i:nil="true" name="substitutionGroup" ref="attr.substitutionGroup.358"/>
+</p:attributeUse>
+<p:attributeUse required="false">
+<p:attributeDeclaration i:nil="true" name="block" ref="attr.block.371"/>
+</p:attributeUse>
+<p:attributeUse required="false">
+<p:attributeDeclaration i:nil="true" name="type" ref="attr.type.356"/>
+</p:attributeUse>
+<p:attributeUse required="false">
+<p:attributeDeclaration i:nil="true" name="final" ref="attr.final.369"/>
+</p:attributeUse>
+<p:attributeUse required="true">
+<p:attributeDeclaration id="attr.name.394" name="name" scope="local">
+<p:atomic i:nil="true" ref="xsd..type.NCName"/>
+</p:attributeDeclaration>
+</p:attributeUse>
+<p:attributeUse required="false">
+<p:attributeDeclaration i:nil="true" name="abstract" ref="attr.abstract.367"/>
+<p:valueConstraint value="false" variety="default"/>
+</p:attributeUse>
+<p:attributeUse required="false">
+<p:attributeDeclaration i:nil="true" name="nillable" ref="attr.nillable.365"/>
+<p:valueConstraint value="false" variety="default"/>
+</p:attributeUse>
+<p:attributeUse required="false">
+<p:attributeDeclaration i:nil="true" name="default" ref="attr.default.361"/>
+</p:attributeUse>
+<p:attributeUse required="false">
+<p:attributeDeclaration i:nil="true" name="id" ref="attr.id.35"/>
+</p:attributeUse>
+<p:wildcard processContents="lax">
+<p:namespaceConstraint namespaces="http://www.w3.org/2001/XMLSchema ##none" variety="negative"/>
+</p:wildcard>
+<p:contentType variety="elementOnly">
+<p:particle maxOccurs="1" minOccurs="1">
+<p:modelGroup compositor="sequence">
+<p:particle maxOccurs="1" minOccurs="0">
+<p:elementDeclaration i:nil="true" ref="xsd..elt.annotation"/>
+</p:particle>
+<p:particle maxOccurs="1" minOccurs="0">
+<p:modelGroup compositor="choice">
+<p:particle maxOccurs="1" minOccurs="1">
+<p:elementDeclaration abstract="false" id="xsd..elt.simpleType.377" name="simpleType" nillable="false" scope="local" targetNamespace="http://www.w3.org/2001/XMLSchema">
+<p:complexTypeDefinition i:nil="true" ref="xsd..type.localSimpleType"/>
+</p:elementDeclaration>
+</p:particle>
+<p:particle maxOccurs="1" minOccurs="1">
+<p:elementDeclaration abstract="false" id="xsd..elt.complexType.379" name="complexType" nillable="false" scope="local" targetNamespace="http://www.w3.org/2001/XMLSchema">
+<p:complexTypeDefinition i:nil="true" ref="xsd..type.localComplexType"/>
+</p:elementDeclaration>
+</p:particle>
+</p:modelGroup>
+</p:particle>
+<p:particle maxOccurs="unbounded" minOccurs="0">
+<p:modelGroup i:nil="true" ref="xsd..mg.identityConstraint"/>
+</p:particle>
+</p:modelGroup>
+</p:particle>
+</p:contentType>
+</p:complexTypeDefinition>
+<p:complexTypeDefinition abstract="false" derivationMethod="restriction" id="xsd..type.topLevelSimpleType" name="topLevelSimpleType" targetNamespace="http://www.w3.org/2001/XMLSchema">
+<p:complexTypeDefinition i:nil="true" ref="xsd..type.simpleType"/>
+<p:attributeUse required="false">
+<p:attributeDeclaration i:nil="true" name="id" ref="attr.id.35"/>
+</p:attributeUse>
+<p:attributeUse required="false">
+<p:attributeDeclaration i:nil="true" name="final" ref="attr.final.951"/>
+</p:attributeUse>
+<p:attributeUse required="true">
+<p:attributeDeclaration id="attr.name.962" name="name" scope="local">
+<p:atomic i:nil="true" ref="xsd..type.NCName"/>
+</p:attributeDeclaration>
+</p:attributeUse>
+<p:wildcard processContents="lax">
+<p:namespaceConstraint namespaces="http://www.w3.org/2001/XMLSchema ##none" variety="negative"/>
+</p:wildcard>
+<p:contentType variety="elementOnly">
+<p:particle maxOccurs="1" minOccurs="1">
+<p:modelGroup compositor="sequence">
+<p:particle maxOccurs="1" minOccurs="0">
+<p:elementDeclaration i:nil="true" ref="xsd..elt.annotation"/>
+</p:particle>
+<p:particle maxOccurs="1" minOccurs="1">
+<p:modelGroup i:nil="true" ref="xsd..mg.simpleDerivation"/>
+</p:particle>
+</p:modelGroup>
+</p:particle>
+</p:contentType>
+</p:complexTypeDefinition>
+<p:complexTypeDefinition abstract="false" derivationMethod="extension" id="xsd..type.wildcard" name="wildcard" targetNamespace="http://www.w3.org/2001/XMLSchema">
+<p:complexTypeDefinition i:nil="true" ref="xsd..type.annotated"/>
+<p:attributeUse required="false">
+<p:attributeDeclaration i:nil="true" name="id" ref="attr.id.35"/>
+</p:attributeUse>
+<p:attributeUse required="false">
+<p:attributeDeclaration id="attr.processContents.564" name="processContents" scope="local">
+<p:atomic id="xsd..type._anon_563" targetNamespace="http://www.w3.org/2001/XMLSchema">
+<p:atomic i:nil="true" ref="xsd..type.NMTOKEN"/>
+<p:atomic i:nil="true" ref="string"/>
+<p:pattern i:nil="true" ref="bip..2"/>
+<p:pattern i:nil="true" ref="bip..3"/>
+<p:enumeration value="skip"/>
+<p:enumeration value="lax"/>
+<p:enumeration value="strict"/>
+<p:whiteSpace fixed="false" value="collapse"/>
+</p:atomic>
+</p:attributeDeclaration>
+<p:valueConstraint value="strict" variety="default"/>
+</p:attributeUse>
+<p:attributeUse required="false">
+<p:attributeDeclaration id="attr.namespace.557" name="namespace" scope="local">
+<p:union i:nil="true" ref="xsd..type.namespaceList"/>
+</p:attributeDeclaration>
+<p:valueConstraint value="##any" variety="default"/>
+</p:attributeUse>
+<p:wildcard processContents="lax">
+<p:namespaceConstraint namespaces="http://www.w3.org/2001/XMLSchema ##none" variety="negative"/>
+</p:wildcard>
+<p:contentType variety="elementOnly">
+<p:particle maxOccurs="1" minOccurs="1">
+<p:modelGroup compositor="sequence">
+<p:particle maxOccurs="1" minOccurs="0">
+<p:elementDeclaration i:nil="true" ref="xsd..elt.annotation"/>
+</p:particle>
+</p:modelGroup>
+</p:particle>
+</p:contentType>
+</p:complexTypeDefinition>
+<p:elementDeclaration abstract="false" disallowedSubstitutions="restriction extension substitution" id="xsd..elt.all" name="all" nillable="false" scope="global" targetNamespace="http://www.w3.org/2001/XMLSchema">
+<p:complexTypeDefinition i:nil="true" ref="xsd..type.all"/>
+</p:elementDeclaration>
+<p:elementDeclaration abstract="false" disallowedSubstitutions="restriction extension substitution" id="xsd..elt.annotation" name="annotation" nillable="false" scope="global" targetNamespace="http://www.w3.org/2001/XMLSchema">
+<p:complexTypeDefinition abstract="false" derivationMethod="extension" id="xsd..type._anon_723" targetNamespace="http://www.w3.org/2001/XMLSchema">
+<p:complexTypeDefinition i:nil="true" ref="xsd..type.openAttrs"/>
+<p:attributeUse required="false">
+<p:attributeDeclaration id="attr.id.721" name="id" scope="local">
+<p:atomic i:nil="true" ref="xsd..type.ID"/>
+</p:attributeDeclaration>
+</p:attributeUse>
+<p:wildcard processContents="lax">
+<p:namespaceConstraint namespaces="http://www.w3.org/2001/XMLSchema ##none" variety="negative"/>
+</p:wildcard>
+<p:contentType variety="elementOnly">
+<p:particle maxOccurs="unbounded" minOccurs="0">
+<p:modelGroup compositor="choice">
+<p:particle maxOccurs="1" minOccurs="1">
+<p:elementDeclaration i:nil="true" ref="xsd..elt.appinfo"/>
+</p:particle>
+<p:particle maxOccurs="1" minOccurs="1">
+<p:elementDeclaration i:nil="true" ref="xsd..elt.documentation"/>
+</p:particle>
+</p:modelGroup>
+</p:particle>
+</p:contentType>
+</p:complexTypeDefinition>
+</p:elementDeclaration>
+<p:elementDeclaration abstract="false" disallowedSubstitutions="restriction extension substitution" id="xsd..elt.any" name="any" nillable="false" scope="global" targetNamespace="http://www.w3.org/2001/XMLSchema">
+<p:complexTypeDefinition abstract="false" derivationMethod="extension" id="xsd..type._anon_569" targetNamespace="http://www.w3.org/2001/XMLSchema">
+<p:complexTypeDefinition i:nil="true" ref="xsd..type.wildcard"/>
+<p:attributeUse required="false">
+<p:attributeDeclaration i:nil="true" name="processContents" ref="attr.processContents.564"/>
+<p:valueConstraint value="strict" variety="default"/>
+</p:attributeUse>
+<p:attributeUse required="false">
+<p:attributeDeclaration i:nil="true" name="minOccurs" ref="attr.minOccurs.129"/>
+<p:valueConstraint value="1" variety="default"/>
+</p:attributeUse>
+<p:attributeUse required="false">
+<p:attributeDeclaration i:nil="true" name="maxOccurs" ref="attr.maxOccurs.131"/>
+<p:valueConstraint value="1" variety="default"/>
+</p:attributeUse>
+<p:attributeUse required="false">
+<p:attributeDeclaration i:nil="true" name="id" ref="attr.id.35"/>
+</p:attributeUse>
+<p:attributeUse required="false">
+<p:attributeDeclaration i:nil="true" name="namespace" ref="attr.namespace.557"/>
+<p:valueConstraint value="##any" variety="default"/>
+</p:attributeUse>
+<p:wildcard processContents="lax">
+<p:namespaceConstraint namespaces="http://www.w3.org/2001/XMLSchema ##none" variety="negative"/>
+</p:wildcard>
+<p:contentType variety="elementOnly">
+<p:particle maxOccurs="1" minOccurs="1">
+<p:modelGroup compositor="sequence">
+<p:particle maxOccurs="1" minOccurs="0">
+<p:elementDeclaration i:nil="true" ref="xsd..elt.annotation"/>
+</p:particle>
+</p:modelGroup>
+</p:particle>
+</p:contentType>
+</p:complexTypeDefinition>
+</p:elementDeclaration>
+<p:elementDeclaration abstract="false" disallowedSubstitutions="restriction extension substitution" id="xsd..elt.anyAttribute" name="anyAttribute" nillable="false" scope="global" targetNamespace="http://www.w3.org/2001/XMLSchema">
+<p:complexTypeDefinition i:nil="true" ref="xsd..type.wildcard"/>
+</p:elementDeclaration>
+<p:elementDeclaration abstract="false" disallowedSubstitutions="restriction extension substitution" id="xsd..elt.appinfo" name="appinfo" nillable="false" scope="global" targetNamespace="http://www.w3.org/2001/XMLSchema">
+<p:complexTypeDefinition abstract="false" derivationMethod="restriction" id="xsd..type._anon_702" targetNamespace="http://www.w3.org/2001/XMLSchema">
+<p:complexTypeDefinition i:nil="true" ref="xsd..type.anyType"/>
+<p:attributeUse required="false">
+<p:attributeDeclaration id="attr.source.698" name="source" scope="local">
+<p:atomic i:nil="true" ref="anyURI"/>
+</p:attributeDeclaration>
+</p:attributeUse>
+<p:wildcard processContents="lax">
+<p:namespaceConstraint namespaces="http://www.w3.org/2001/XMLSchema ##none" variety="negative"/>
+</p:wildcard>
+<p:contentType variety="mixed">
+<p:particle maxOccurs="unbounded" minOccurs="0">
+<p:modelGroup compositor="sequence">
+<p:particle maxOccurs="1" minOccurs="1">
+<p:wildcard processContents="lax">
+<p:namespaceConstraint variety="any"/>
+</p:wildcard>
+</p:particle>
+</p:modelGroup>
+</p:particle>
+</p:contentType>
+</p:complexTypeDefinition>
+</p:elementDeclaration>
+<p:elementDeclaration abstract="false" disallowedSubstitutions="restriction extension substitution" id="xsd..elt.attribute" name="attribute" nillable="false" scope="global" targetNamespace="http://www.w3.org/2001/XMLSchema">
+<p:complexTypeDefinition i:nil="true" ref="xsd..type.topLevelAttribute"/>
+</p:elementDeclaration>
+<p:elementDeclaration abstract="false" disallowedSubstitutions="restriction extension substitution" id="xsd..elt.attributeGroup" name="attributeGroup" nillable="false" scope="global" targetNamespace="http://www.w3.org/2001/XMLSchema">
+<p:complexTypeDefinition i:nil="true" ref="xsd..type.namedAttributeGroup"/>
+</p:elementDeclaration>
+<p:elementDeclaration abstract="false" disallowedSubstitutions="restriction extension substitution" id="xsd..elt.choice" name="choice" nillable="false" scope="global" targetNamespace="http://www.w3.org/2001/XMLSchema">
+<p:complexTypeDefinition i:nil="true" ref="xsd..type.explicitGroup"/>
+</p:elementDeclaration>
+<p:elementDeclaration abstract="false" disallowedSubstitutions="restriction extension substitution" id="xsd..elt.complexContent" name="complexContent" nillable="false" scope="global" targetNamespace="http://www.w3.org/2001/XMLSchema">
+<p:complexTypeDefinition abstract="false" derivationMethod="extension" id="xsd..type._anon_300" targetNamespace="http://www.w3.org/2001/XMLSchema">
+<p:complexTypeDefinition i:nil="true" ref="xsd..type.annotated"/>
+<p:attributeUse required="false">
+<p:attributeDeclaration id="attr.mixed.298" name="mixed" scope="local">
+<p:atomic i:nil="true" ref="boolean"/>
+</p:attributeDeclaration>
+</p:attributeUse>
+<p:attributeUse required="false">
+<p:attributeDeclaration i:nil="true" name="id" ref="attr.id.35"/>
+</p:attributeUse>
+<p:wildcard processContents="lax">
+<p:namespaceConstraint namespaces="http://www.w3.org/2001/XMLSchema ##none" variety="negative"/>
+</p:wildcard>
+<p:contentType variety="elementOnly">
+<p:particle maxOccurs="1" minOccurs="1">
+<p:modelGroup compositor="sequence">
+<p:particle maxOccurs="1" minOccurs="0">
+<p:elementDeclaration i:nil="true" ref="xsd..elt.annotation"/>
+</p:particle>
+<p:particle maxOccurs="1" minOccurs="1">
+<p:modelGroup compositor="choice">
+<p:particle maxOccurs="1" minOccurs="1">
+<p:elementDeclaration abstract="false" id="xsd..elt.restriction.291" name="restriction" nillable="false" scope="local" targetNamespace="http://www.w3.org/2001/XMLSchema">
+<p:complexTypeDefinition i:nil="true" ref="xsd..type.complexRestrictionType"/>
+</p:elementDeclaration>
+</p:particle>
+<p:particle maxOccurs="1" minOccurs="1">
+<p:elementDeclaration abstract="false" id="xsd..elt.extension.293" name="extension" nillable="false" scope="local" targetNamespace="http://www.w3.org/2001/XMLSchema">
+<p:complexTypeDefinition i:nil="true" ref="xsd..type.extensionType"/>
+</p:elementDeclaration>
+</p:particle>
+</p:modelGroup>
+</p:particle>
+</p:modelGroup>
+</p:particle>
+</p:contentType>
+</p:complexTypeDefinition>
+</p:elementDeclaration>
+<p:elementDeclaration abstract="false" disallowedSubstitutions="restriction extension substitution" id="xsd..elt.complexType" name="complexType" nillable="false" scope="global" targetNamespace="http://www.w3.org/2001/XMLSchema">
+<p:complexTypeDefinition i:nil="true" ref="xsd..type.topLevelComplexType"/>
+</p:elementDeclaration>
+<p:elementDeclaration abstract="false" disallowedSubstitutions="restriction extension substitution" id="xsd..elt.documentation" name="documentation" nillable="false" scope="global" targetNamespace="http://www.w3.org/2001/XMLSchema">
+<p:complexTypeDefinition abstract="false" derivationMethod="restriction" id="xsd..type._anon_714" targetNamespace="http://www.w3.org/2001/XMLSchema">
+<p:complexTypeDefinition i:nil="true" ref="xsd..type.anyType"/>
+<p:attributeUse required="false">
+<p:attributeDeclaration id="attr.source.709" name="source" scope="local">
+<p:atomic i:nil="true" ref="anyURI"/>
+</p:attributeDeclaration>
+</p:attributeUse>
+<p:attributeUse required="false">
+<p:attributeDeclaration i:nil="true" name="lang" ref="xml..attr.lang" tns="http://www.w3.org/XML/1998/namespace"/>
+</p:attributeUse>
+<p:wildcard processContents="lax">
+<p:namespaceConstraint namespaces="http://www.w3.org/2001/XMLSchema ##none" variety="negative"/>
+</p:wildcard>
+<p:contentType variety="mixed">
+<p:particle maxOccurs="unbounded" minOccurs="0">
+<p:modelGroup compositor="sequence">
+<p:particle maxOccurs="1" minOccurs="1">
+<p:wildcard processContents="lax">
+<p:namespaceConstraint variety="any"/>
+</p:wildcard>
+</p:particle>
+</p:modelGroup>
+</p:particle>
+</p:contentType>
+</p:complexTypeDefinition>
+</p:elementDeclaration>
+<p:elementDeclaration abstract="false" disallowedSubstitutions="restriction extension substitution" id="xsd..elt.element" name="element" nillable="false" scope="global" targetNamespace="http://www.w3.org/2001/XMLSchema">
+<p:complexTypeDefinition i:nil="true" ref="xsd..type.topLevelElement"/>
+</p:elementDeclaration>
+<p:elementDeclaration abstract="false" disallowedSubstitutions="restriction extension substitution" id="xsd..elt.enumeration" name="enumeration" nillable="false" scope="global" targetNamespace="http://www.w3.org/2001/XMLSchema">
+<p:complexTypeDefinition i:nil="true" ref="xsd..type.noFixedFacet"/>
+</p:elementDeclaration>
+<p:elementDeclaration abstract="false" disallowedSubstitutions="restriction extension substitution" id="xsd..elt.field" name="field" nillable="false" scope="global" targetNamespace="http://www.w3.org/2001/XMLSchema">
+<p:complexTypeDefinition abstract="false" derivationMethod="extension" id="xsd..type._anon_657" targetNamespace="http://www.w3.org/2001/XMLSchema">
+<p:complexTypeDefinition i:nil="true" ref="xsd..type.annotated"/>
+<p:attributeUse required="true">
+<p:attributeDeclaration id="attr.xpath.655" name="xpath" scope="local">
+<p:atomic id="xsd..type._anon_654" targetNamespace="http://www.w3.org/2001/XMLSchema">
+<p:atomic i:nil="true" ref="xsd..type.token"/>
+<p:atomic i:nil="true" ref="string"/>
+<p:pattern id="f.pattern.652..1" value="(\.//)?((((child::)?((\i\c*:)?(\i\c*|\*)))|\.)/)*((((child::)?((\i\c*:)?(\i\c*|\*)))|\.)|((attribute::|@)((\i\c*:)?(\i\c*|\*))))(\|(\.//)?((((child::)?((\i\c*:)?(\i\c*|\*)))|\.)/)*((((child::)?((\i\c*:)?(\i\c*|\*)))|\.)|((attribute::|@)((\i\c*:)?(\i\c*|\*)))))*"/>
+<p:whiteSpace fixed="false" value="collapse"/>
+</p:atomic>
+</p:attributeDeclaration>
+</p:attributeUse>
+<p:attributeUse required="false">
+<p:attributeDeclaration i:nil="true" name="id" ref="attr.id.35"/>
+</p:attributeUse>
+<p:wildcard processContents="lax">
+<p:namespaceConstraint namespaces="http://www.w3.org/2001/XMLSchema ##none" variety="negative"/>
+</p:wildcard>
+<p:contentType variety="elementOnly">
+<p:particle maxOccurs="1" minOccurs="1">
+<p:modelGroup compositor="sequence">
+<p:particle maxOccurs="1" minOccurs="0">
+<p:elementDeclaration i:nil="true" ref="xsd..elt.annotation"/>
+</p:particle>
+</p:modelGroup>
+</p:particle>
+</p:contentType>
+</p:complexTypeDefinition>
+</p:elementDeclaration>
+<p:elementDeclaration abstract="false" disallowedSubstitutions="restriction extension substitution" id="xsd..elt.fractionDigits" name="fractionDigits" nillable="false" scope="global" targetNamespace="http://www.w3.org/2001/XMLSchema">
+<p:complexTypeDefinition i:nil="true" ref="xsd..type.numFacet"/>
+</p:elementDeclaration>
+<p:elementDeclaration abstract="false" disallowedSubstitutions="restriction extension substitution" id="xsd..elt.group" name="group" nillable="false" scope="global" targetNamespace="http://www.w3.org/2001/XMLSchema">
+<p:complexTypeDefinition i:nil="true" ref="xsd..type.namedGroup"/>
+</p:elementDeclaration>
+<p:elementDeclaration abstract="false" disallowedSubstitutions="restriction extension substitution" id="xsd..elt.import" name="import" nillable="false" scope="global" targetNamespace="http://www.w3.org/2001/XMLSchema">
+<p:complexTypeDefinition abstract="false" derivationMethod="extension" id="xsd..type._anon_637" targetNamespace="http://www.w3.org/2001/XMLSchema">
+<p:complexTypeDefinition i:nil="true" ref="xsd..type.annotated"/>
+<p:attributeUse required="false">
+<p:attributeDeclaration id="attr.schemaLocation.635" name="schemaLocation" scope="local">
+<p:atomic i:nil="true" ref="anyURI"/>
+</p:attributeDeclaration>
+</p:attributeUse>
+<p:attributeUse required="false">
+<p:attributeDeclaration i:nil="true" name="id" ref="attr.id.35"/>
+</p:attributeUse>
+<p:attributeUse required="false">
+<p:attributeDeclaration id="attr.namespace.633" name="namespace" scope="local">
+<p:atomic i:nil="true" ref="anyURI"/>
+</p:attributeDeclaration>
+</p:attributeUse>
+<p:wildcard processContents="lax">
+<p:namespaceConstraint namespaces="http://www.w3.org/2001/XMLSchema ##none" variety="negative"/>
+</p:wildcard>
+<p:contentType variety="elementOnly">
+<p:particle maxOccurs="1" minOccurs="1">
+<p:modelGroup compositor="sequence">
+<p:particle maxOccurs="1" minOccurs="0">
+<p:elementDeclaration i:nil="true" ref="xsd..elt.annotation"/>
+</p:particle>
+</p:modelGroup>
+</p:particle>
+</p:contentType>
+</p:complexTypeDefinition>
+</p:elementDeclaration>
+<p:elementDeclaration abstract="false" disallowedSubstitutions="restriction extension substitution" id="xsd..elt.include" name="include" nillable="false" scope="global" targetNamespace="http://www.w3.org/2001/XMLSchema">
+<p:complexTypeDefinition abstract="false" derivationMethod="extension" id="xsd..type._anon_619" targetNamespace="http://www.w3.org/2001/XMLSchema">
+<p:complexTypeDefinition i:nil="true" ref="xsd..type.annotated"/>
+<p:attributeUse required="true">
+<p:attributeDeclaration id="attr.schemaLocation.617" name="schemaLocation" scope="local">
+<p:atomic i:nil="true" ref="anyURI"/>
+</p:attributeDeclaration>
+</p:attributeUse>
+<p:attributeUse required="false">
+<p:attributeDeclaration i:nil="true" name="id" ref="attr.id.35"/>
+</p:attributeUse>
+<p:wildcard processContents="lax">
+<p:namespaceConstraint namespaces="http://www.w3.org/2001/XMLSchema ##none" variety="negative"/>
+</p:wildcard>
+<p:contentType variety="elementOnly">
+<p:particle maxOccurs="1" minOccurs="1">
+<p:modelGroup compositor="sequence">
+<p:particle maxOccurs="1" minOccurs="0">
+<p:elementDeclaration i:nil="true" ref="xsd..elt.annotation"/>
+</p:particle>
+</p:modelGroup>
+</p:particle>
+</p:contentType>
+</p:complexTypeDefinition>
+</p:elementDeclaration>
+<p:elementDeclaration abstract="false" disallowedSubstitutions="restriction extension substitution" id="xsd..elt.key" name="key" nillable="false" scope="global" targetNamespace="http://www.w3.org/2001/XMLSchema">
+<p:complexTypeDefinition i:nil="true" ref="xsd..type.keybase"/>
+</p:elementDeclaration>
+<p:elementDeclaration abstract="false" disallowedSubstitutions="restriction extension substitution" id="xsd..elt.keyref" name="keyref" nillable="false" scope="global" targetNamespace="http://www.w3.org/2001/XMLSchema">
+<p:complexTypeDefinition abstract="false" derivationMethod="extension" id="xsd..type._anon_679" targetNamespace="http://www.w3.org/2001/XMLSchema">
+<p:complexTypeDefinition i:nil="true" ref="xsd..type.keybase"/>
+<p:attributeUse required="true">
+<p:attributeDeclaration i:nil="true" name="name" ref="attr.name.663"/>
+</p:attributeUse>
+<p:attributeUse required="true">
+<p:attributeDeclaration id="attr.refer.677" name="refer" scope="local">
+<p:atomic i:nil="true" ref="QName"/>
+</p:attributeDeclaration>
+</p:attributeUse>
+<p:attributeUse required="false">
+<p:attributeDeclaration i:nil="true" name="id" ref="attr.id.35"/>
+</p:attributeUse>
+<p:wildcard processContents="lax">
+<p:namespaceConstraint namespaces="http://www.w3.org/2001/XMLSchema ##none" variety="negative"/>
+</p:wildcard>
+<p:contentType variety="elementOnly">
+<p:particle maxOccurs="1" minOccurs="1">
+<p:modelGroup compositor="sequence">
+<p:particle maxOccurs="1" minOccurs="0">
+<p:elementDeclaration i:nil="true" ref="xsd..elt.annotation"/>
+</p:particle>
+<p:particle maxOccurs="1" minOccurs="1">
+<p:modelGroup compositor="sequence">
+<p:particle maxOccurs="1" minOccurs="1">
+<p:elementDeclaration i:nil="true" ref="xsd..elt.selector"/>
+</p:particle>
+<p:particle maxOccurs="unbounded" minOccurs="1">
+<p:elementDeclaration i:nil="true" ref="xsd..elt.field"/>
+</p:particle>
+</p:modelGroup>
+</p:particle>
+</p:modelGroup>
+</p:particle>
+</p:contentType>
+</p:complexTypeDefinition>
+</p:elementDeclaration>
+<p:elementDeclaration abstract="false" disallowedSubstitutions="restriction extension substitution" id="xsd..elt.length" name="length" nillable="false" scope="global" targetNamespace="http://www.w3.org/2001/XMLSchema">
+<p:complexTypeDefinition i:nil="true" ref="xsd..type.numFacet"/>
+</p:elementDeclaration>
+<p:elementDeclaration abstract="false" disallowedSubstitutions="restriction extension substitution" id="xsd..elt.list" name="list" nillable="false" scope="global" targetNamespace="http://www.w3.org/2001/XMLSchema">
+<p:complexTypeDefinition abstract="false" derivationMethod="extension" id="xsd..type._anon_1014" targetNamespace="http://www.w3.org/2001/XMLSchema">
+<p:complexTypeDefinition i:nil="true" ref="xsd..type.annotated"/>
+<p:attributeUse required="false">
+<p:attributeDeclaration i:nil="true" name="id" ref="attr.id.35"/>
+</p:attributeUse>
+<p:attributeUse required="false">
+<p:attributeDeclaration id="attr.itemType.1012" name="itemType" scope="local">
+<p:atomic i:nil="true" ref="QName"/>
+</p:attributeDeclaration>
+</p:attributeUse>
+<p:wildcard processContents="lax">
+<p:namespaceConstraint namespaces="http://www.w3.org/2001/XMLSchema ##none" variety="negative"/>
+</p:wildcard>
+<p:contentType variety="elementOnly">
+<p:particle maxOccurs="1" minOccurs="1">
+<p:modelGroup compositor="sequence">
+<p:particle maxOccurs="1" minOccurs="0">
+<p:elementDeclaration i:nil="true" ref="xsd..elt.annotation"/>
+</p:particle>
+<p:particle maxOccurs="1" minOccurs="1">
+<p:modelGroup compositor="sequence">
+<p:particle maxOccurs="1" minOccurs="0">
+<p:elementDeclaration abstract="false" id="xsd..elt.simpleType.1008" name="simpleType" nillable="false" scope="local" targetNamespace="http://www.w3.org/2001/XMLSchema">
+<p:complexTypeDefinition i:nil="true" ref="xsd..type.localSimpleType"/>
+</p:elementDeclaration>
+</p:particle>
+</p:modelGroup>
+</p:particle>
+</p:modelGroup>
+</p:particle>
+</p:contentType>
+</p:complexTypeDefinition>
+</p:elementDeclaration>
+<p:elementDeclaration abstract="false" disallowedSubstitutions="restriction extension substitution" id="xsd..elt.maxExclusive" name="maxExclusive" nillable="false" scope="global" targetNamespace="http://www.w3.org/2001/XMLSchema">
+<p:complexTypeDefinition i:nil="true" ref="xsd..type.facet"/>
+</p:elementDeclaration>
+<p:elementDeclaration abstract="false" disallowedSubstitutions="restriction extension substitution" id="xsd..elt.maxInclusive" name="maxInclusive" nillable="false" scope="global" targetNamespace="http://www.w3.org/2001/XMLSchema">
+<p:complexTypeDefinition i:nil="true" ref="xsd..type.facet"/>
+</p:elementDeclaration>
+<p:elementDeclaration abstract="false" disallowedSubstitutions="restriction extension substitution" id="xsd..elt.maxLength" name="maxLength" nillable="false" scope="global" targetNamespace="http://www.w3.org/2001/XMLSchema">
+<p:complexTypeDefinition i:nil="true" ref="xsd..type.numFacet"/>
+</p:elementDeclaration>
+<p:elementDeclaration abstract="false" disallowedSubstitutions="restriction extension substitution" id="xsd..elt.minExclusive" name="minExclusive" nillable="false" scope="global" targetNamespace="http://www.w3.org/2001/XMLSchema">
+<p:complexTypeDefinition i:nil="true" ref="xsd..type.facet"/>
+</p:elementDeclaration>
+<p:elementDeclaration abstract="false" disallowedSubstitutions="restriction extension substitution" id="xsd..elt.minInclusive" name="minInclusive" nillable="false" scope="global" targetNamespace="http://www.w3.org/2001/XMLSchema">
+<p:complexTypeDefinition i:nil="true" ref="xsd..type.facet"/>
+</p:elementDeclaration>
+<p:elementDeclaration abstract="false" disallowedSubstitutions="restriction extension substitution" id="xsd..elt.minLength" name="minLength" nillable="false" scope="global" targetNamespace="http://www.w3.org/2001/XMLSchema">
+<p:complexTypeDefinition i:nil="true" ref="xsd..type.numFacet"/>
+</p:elementDeclaration>
+<p:elementDeclaration abstract="false" disallowedSubstitutions="restriction extension substitution" id="xsd..elt.notation" name="notation" nillable="false" scope="global" targetNamespace="http://www.w3.org/2001/XMLSchema">
+<p:complexTypeDefinition abstract="false" derivationMethod="extension" id="xsd..type._anon_688" targetNamespace="http://www.w3.org/2001/XMLSchema">
+<p:complexTypeDefinition i:nil="true" ref="xsd..type.annotated"/>
+<p:attributeUse required="false">
+<p:attributeDeclaration i:nil="true" name="id" ref="attr.id.35"/>
+</p:attributeUse>
+<p:attributeUse required="false">
+<p:attributeDeclaration id="attr.system.686" name="system" scope="local">
+<p:atomic i:nil="true" ref="anyURI"/>
+</p:attributeDeclaration>
+</p:attributeUse>
+<p:attributeUse required="false">
+<p:attributeDeclaration id="attr.public.684" name="public" scope="local">
+<p:atomic i:nil="true" ref="xsd..type.public"/>
+</p:attributeDeclaration>
+</p:attributeUse>
+<p:attributeUse required="true">
+<p:attributeDeclaration id="attr.name.682" name="name" scope="local">
+<p:atomic i:nil="true" ref="xsd..type.NCName"/>
+</p:attributeDeclaration>
+</p:attributeUse>
+<p:wildcard processContents="lax">
+<p:namespaceConstraint namespaces="http://www.w3.org/2001/XMLSchema ##none" variety="negative"/>
+</p:wildcard>
+<p:contentType variety="elementOnly">
+<p:particle maxOccurs="1" minOccurs="1">
+<p:modelGroup compositor="sequence">
+<p:particle maxOccurs="1" minOccurs="0">
+<p:elementDeclaration i:nil="true" ref="xsd..elt.annotation"/>
+</p:particle>
+</p:modelGroup>
+</p:particle>
+</p:contentType>
+</p:complexTypeDefinition>
+</p:elementDeclaration>
+<p:elementDeclaration abstract="false" disallowedSubstitutions="restriction extension substitution" id="xsd..elt.pattern" name="pattern" nillable="false" scope="global" targetNamespace="http://www.w3.org/2001/XMLSchema">
+<p:complexTypeDefinition abstract="false" derivationMethod="restriction" id="xsd..type._anon_1099" targetNamespace="http://www.w3.org/2001/XMLSchema">
+<p:complexTypeDefinition i:nil="true" ref="xsd..type.noFixedFacet"/>
+<p:attributeUse required="false">
+<p:attributeDeclaration i:nil="true" name="id" ref="attr.id.35"/>
+</p:attributeUse>
+<p:attributeUse required="true">
+<p:attributeDeclaration id="attr.value.1095" name="value" scope="local">
+<p:atomic i:nil="true" ref="string"/>
+</p:attributeDeclaration>
+</p:attributeUse>
+<p:wildcard processContents="lax">
+<p:namespaceConstraint namespaces="http://www.w3.org/2001/XMLSchema ##none" variety="negative"/>
+</p:wildcard>
+<p:contentType variety="elementOnly">
+<p:particle maxOccurs="1" minOccurs="1">
+<p:modelGroup compositor="sequence">
+<p:particle maxOccurs="1" minOccurs="0">
+<p:elementDeclaration i:nil="true" ref="xsd..elt.annotation"/>
+</p:particle>
+</p:modelGroup>
+</p:particle>
+</p:contentType>
+</p:complexTypeDefinition>
+</p:elementDeclaration>
+<p:elementDeclaration abstract="false" disallowedSubstitutions="restriction extension substitution" id="xsd..elt.redefine" name="redefine" nillable="false" scope="global" targetNamespace="http://www.w3.org/2001/XMLSchema">
+<p:complexTypeDefinition abstract="false" derivationMethod="extension" id="xsd..type._anon_630" targetNamespace="http://www.w3.org/2001/XMLSchema">
+<p:complexTypeDefinition i:nil="true" ref="xsd..type.openAttrs"/>
+<p:attributeUse required="true">
+<p:attributeDeclaration id="attr.schemaLocation.626" name="schemaLocation" scope="local">
+<p:atomic i:nil="true" ref="anyURI"/>
+</p:attributeDeclaration>
+</p:attributeUse>
+<p:attributeUse required="false">
+<p:attributeDeclaration id="attr.id.628" name="id" scope="local">
+<p:atomic i:nil="true" ref="xsd..type.ID"/>
+</p:attributeDeclaration>
+</p:attributeUse>
+<p:wildcard processContents="lax">
+<p:namespaceConstraint namespaces="http://www.w3.org/2001/XMLSchema ##none" variety="negative"/>
+</p:wildcard>
+<p:contentType variety="elementOnly">
+<p:particle maxOccurs="unbounded" minOccurs="0">
+<p:modelGroup compositor="choice">
+<p:particle maxOccurs="1" minOccurs="1">
+<p:elementDeclaration i:nil="true" ref="xsd..elt.annotation"/>
+</p:particle>
+<p:particle maxOccurs="1" minOccurs="1">
+<p:modelGroup i:nil="true" ref="xsd..mg.redefinable"/>
+</p:particle>
+</p:modelGroup>
+</p:particle>
+</p:contentType>
+</p:complexTypeDefinition>
+</p:elementDeclaration>
+<p:elementDeclaration abstract="false" disallowedSubstitutions="restriction extension substitution" id="xsd..elt.restriction" name="restriction" nillable="false" scope="global" targetNamespace="http://www.w3.org/2001/XMLSchema">
+<p:complexTypeDefinition abstract="false" derivationMethod="extension" id="xsd..type._anon_1005" targetNamespace="http://www.w3.org/2001/XMLSchema">
+<p:complexTypeDefinition i:nil="true" ref="xsd..type.annotated"/>
+<p:attributeUse required="false">
+<p:attributeDeclaration id="attr.base.1003" name="base" scope="local">
+<p:atomic i:nil="true" ref="QName"/>
+</p:attributeDeclaration>
+</p:attributeUse>
+<p:attributeUse required="false">
+<p:attributeDeclaration i:nil="true" name="id" ref="attr.id.35"/>
+</p:attributeUse>
+<p:wildcard processContents="lax">
+<p:namespaceConstraint namespaces="http://www.w3.org/2001/XMLSchema ##none" variety="negative"/>
+</p:wildcard>
+<p:contentType variety="elementOnly">
+<p:particle maxOccurs="1" minOccurs="1">
+<p:modelGroup compositor="sequence">
+<p:particle maxOccurs="1" minOccurs="0">
+<p:elementDeclaration i:nil="true" ref="xsd..elt.annotation"/>
+</p:particle>
+<p:particle maxOccurs="1" minOccurs="1">
+<p:modelGroup i:nil="true" ref="xsd..mg.simpleRestrictionModel"/>
+</p:particle>
+</p:modelGroup>
+</p:particle>
+</p:contentType>
+</p:complexTypeDefinition>
+</p:elementDeclaration>
+<p:elementDeclaration abstract="false" disallowedSubstitutions="restriction extension substitution" id="xsd..elt.schema" name="schema" nillable="false" scope="global" targetNamespace="http://www.w3.org/2001/XMLSchema">
+<p:complexTypeDefinition abstract="false" derivationMethod="extension" id="xsd..type._anon_113" targetNamespace="http://www.w3.org/2001/XMLSchema">
+<p:complexTypeDefinition i:nil="true" ref="xsd..type.openAttrs"/>
+<p:attributeUse required="false">
+<p:attributeDeclaration id="attr.elementFormDefault.108" name="elementFormDefault" scope="local">
+<p:atomic i:nil="true" ref="xsd..type.formChoice"/>
+</p:attributeDeclaration>
+<p:valueConstraint value="unqualified" variety="default"/>
+</p:attributeUse>
+<p:attributeUse required="false">
+<p:attributeDeclaration id="attr.version.100" name="version" scope="local">
+<p:atomic i:nil="true" ref="xsd..type.token"/>
+</p:attributeDeclaration>
+</p:attributeUse>
+<p:attributeUse required="false">
+<p:attributeDeclaration id="attr.finalDefault.102" name="finalDefault" scope="local">
+<p:union i:nil="true" ref="xsd..type.fullDerivationSet"/>
+</p:attributeDeclaration>
+<p:valueConstraint value="" variety="default"/>
+</p:attributeUse>
+<p:attributeUse required="false">
+<p:attributeDeclaration id="attr.blockDefault.104" name="blockDefault" scope="local">
+<p:union i:nil="true" ref="xsd..type.blockSet"/>
+</p:attributeDeclaration>
+<p:valueConstraint value="" variety="default"/>
+</p:attributeUse>
+<p:attributeUse required="false">
+<p:attributeDeclaration id="attr.targetNamespace.98" name="targetNamespace" scope="local">
+<p:atomic i:nil="true" ref="anyURI"/>
+</p:attributeDeclaration>
+</p:attributeUse>
+<p:attributeUse required="false">
+<p:attributeDeclaration id="attr.id.110" name="id" scope="local">
+<p:atomic i:nil="true" ref="xsd..type.ID"/>
+</p:attributeDeclaration>
+</p:attributeUse>
+<p:attributeUse required="false">
+<p:attributeDeclaration i:nil="true" name="lang" ref="xml..attr.lang" tns="http://www.w3.org/XML/1998/namespace"/>
+</p:attributeUse>
+<p:attributeUse required="false">
+<p:attributeDeclaration id="attr.attributeFormDefault.106" name="attributeFormDefault" scope="local">
+<p:atomic i:nil="true" ref="xsd..type.formChoice"/>
+</p:attributeDeclaration>
+<p:valueConstraint value="unqualified" variety="default"/>
+</p:attributeUse>
+<p:wildcard processContents="lax">
+<p:namespaceConstraint namespaces="http://www.w3.org/2001/XMLSchema ##none" variety="negative"/>
+</p:wildcard>
+<p:contentType variety="elementOnly">
+<p:particle maxOccurs="1" minOccurs="1">
+<p:modelGroup compositor="sequence">
+<p:particle maxOccurs="unbounded" minOccurs="0">
+<p:modelGroup compositor="choice">
+<p:particle maxOccurs="1" minOccurs="1">
+<p:elementDeclaration i:nil="true" ref="xsd..elt.include"/>
+</p:particle>
+<p:particle maxOccurs="1" minOccurs="1">
+<p:elementDeclaration i:nil="true" ref="xsd..elt.import"/>
+</p:particle>
+<p:particle maxOccurs="1" minOccurs="1">
+<p:elementDeclaration i:nil="true" ref="xsd..elt.redefine"/>
+</p:particle>
+<p:particle maxOccurs="1" minOccurs="1">
+<p:elementDeclaration i:nil="true" ref="xsd..elt.annotation"/>
+</p:particle>
+</p:modelGroup>
+</p:particle>
+<p:particle maxOccurs="unbounded" minOccurs="0">
+<p:modelGroup compositor="sequence">
+<p:particle maxOccurs="1" minOccurs="1">
+<p:modelGroup i:nil="true" ref="xsd..mg.schemaTop"/>
+</p:particle>
+<p:particle maxOccurs="unbounded" minOccurs="0">
+<p:elementDeclaration i:nil="true" ref="xsd..elt.annotation"/>
+</p:particle>
+</p:modelGroup>
+</p:particle>
+</p:modelGroup>
+</p:particle>
+</p:contentType>
+</p:complexTypeDefinition>
+<p:key id="xsd..idCons.element" name="element" targetNamespace="http://www.w3.org/2001/XMLSchema">
+<p:xpath path="xs:element"/>
+<p:xpath path="@name"/>
+</p:key>
+<p:key id="xsd..idCons.attribute" name="attribute" targetNamespace="http://www.w3.org/2001/XMLSchema">
+<p:xpath path="xs:attribute"/>
+<p:xpath path="@name"/>
+</p:key>
+<p:key id="xsd..idCons.type" name="type" targetNamespace="http://www.w3.org/2001/XMLSchema">
+<p:xpath path="xs:complexType|xs:simpleType"/>
+<p:xpath path="@name"/>
+</p:key>
+<p:key id="xsd..idCons.group" name="group" targetNamespace="http://www.w3.org/2001/XMLSchema">
+<p:xpath path="xs:group"/>
+<p:xpath path="@name"/>
+</p:key>
+<p:key id="xsd..idCons.attributeGroup" name="attributeGroup" targetNamespace="http://www.w3.org/2001/XMLSchema">
+<p:xpath path="xs:attributeGroup"/>
+<p:xpath path="@name"/>
+</p:key>
+<p:key id="xsd..idCons.notation" name="notation" targetNamespace="http://www.w3.org/2001/XMLSchema">
+<p:xpath path="xs:notation"/>
+<p:xpath path="@name"/>
+</p:key>
+<p:key id="xsd..idCons.identityConstraint" name="identityConstraint" targetNamespace="http://www.w3.org/2001/XMLSchema">
+<p:xpath path=".//xs:key|.//xs:unique|.//xs:keyref"/>
+<p:xpath path="@name"/>
+</p:key>
+</p:elementDeclaration>
+<p:elementDeclaration abstract="false" disallowedSubstitutions="restriction extension substitution" id="xsd..elt.selector" name="selector" nillable="false" scope="global" targetNamespace="http://www.w3.org/2001/XMLSchema">
+<p:complexTypeDefinition abstract="false" derivationMethod="extension" id="xsd..type._anon_647" targetNamespace="http://www.w3.org/2001/XMLSchema">
+<p:complexTypeDefinition i:nil="true" ref="xsd..type.annotated"/>
+<p:attributeUse required="true">
+<p:attributeDeclaration id="attr.xpath.645" name="xpath" scope="local">
+<p:atomic id="xsd..type._anon_644" targetNamespace="http://www.w3.org/2001/XMLSchema">
+<p:atomic i:nil="true" ref="xsd..type.token"/>
+<p:atomic i:nil="true" ref="string"/>
+<p:pattern id="f.pattern.642..1" value="(\.//)?(((child::)?((\i\c*:)?(\i\c*|\*)))|\.)(/(((child::)?((\i\c*:)?(\i\c*|\*)))|\.))*(\|(\.//)?(((child::)?((\i\c*:)?(\i\c*|\*)))|\.)(/(((child::)?((\i\c*:)?(\i\c*|\*)))|\.))*)*"/>
+<p:whiteSpace fixed="false" value="collapse"/>
+</p:atomic>
+</p:attributeDeclaration>
+</p:attributeUse>
+<p:attributeUse required="false">
+<p:attributeDeclaration i:nil="true" name="id" ref="attr.id.35"/>
+</p:attributeUse>
+<p:wildcard processContents="lax">
+<p:namespaceConstraint namespaces="http://www.w3.org/2001/XMLSchema ##none" variety="negative"/>
+</p:wildcard>
+<p:contentType variety="elementOnly">
+<p:particle maxOccurs="1" minOccurs="1">
+<p:modelGroup compositor="sequence">
+<p:particle maxOccurs="1" minOccurs="0">
+<p:elementDeclaration i:nil="true" ref="xsd..elt.annotation"/>
+</p:particle>
+</p:modelGroup>
+</p:particle>
+</p:contentType>
+</p:complexTypeDefinition>
+</p:elementDeclaration>
+<p:elementDeclaration abstract="false" disallowedSubstitutions="restriction extension substitution" id="xsd..elt.sequence" name="sequence" nillable="false" scope="global" targetNamespace="http://www.w3.org/2001/XMLSchema">
+<p:complexTypeDefinition i:nil="true" ref="xsd..type.explicitGroup"/>
+</p:elementDeclaration>
+<p:elementDeclaration abstract="false" disallowedSubstitutions="restriction extension substitution" id="xsd..elt.simpleContent" name="simpleContent" nillable="false" scope="global" targetNamespace="http://www.w3.org/2001/XMLSchema">
+<p:complexTypeDefinition abstract="false" derivationMethod="extension" id="xsd..type._anon_328" targetNamespace="http://www.w3.org/2001/XMLSchema">
+<p:complexTypeDefinition i:nil="true" ref="xsd..type.annotated"/>
+<p:attributeUse required="false">
+<p:attributeDeclaration i:nil="true" name="id" ref="attr.id.35"/>
+</p:attributeUse>
+<p:wildcard processContents="lax">
+<p:namespaceConstraint namespaces="http://www.w3.org/2001/XMLSchema ##none" variety="negative"/>
+</p:wildcard>
+<p:contentType variety="elementOnly">
+<p:particle maxOccurs="1" minOccurs="1">
+<p:modelGroup compositor="sequence">
+<p:particle maxOccurs="1" minOccurs="0">
+<p:elementDeclaration i:nil="true" ref="xsd..elt.annotation"/>
+</p:particle>
+<p:particle maxOccurs="1" minOccurs="1">
+<p:modelGroup compositor="choice">
+<p:particle maxOccurs="1" minOccurs="1">
+<p:elementDeclaration abstract="false" id="xsd..elt.restriction.322" name="restriction" nillable="false" scope="local" targetNamespace="http://www.w3.org/2001/XMLSchema">
+<p:complexTypeDefinition i:nil="true" ref="xsd..type.simpleRestrictionType"/>
+</p:elementDeclaration>
+</p:particle>
+<p:particle maxOccurs="1" minOccurs="1">
+<p:elementDeclaration abstract="false" id="xsd..elt.extension.324" name="extension" nillable="false" scope="local" targetNamespace="http://www.w3.org/2001/XMLSchema">
+<p:complexTypeDefinition i:nil="true" ref="xsd..type.simpleExtensionType"/>
+</p:elementDeclaration>
+</p:particle>
+</p:modelGroup>
+</p:particle>
+</p:modelGroup>
+</p:particle>
+</p:contentType>
+</p:complexTypeDefinition>
+</p:elementDeclaration>
+<p:elementDeclaration abstract="false" disallowedSubstitutions="restriction extension substitution" id="xsd..elt.simpleType" name="simpleType" nillable="false" scope="global" targetNamespace="http://www.w3.org/2001/XMLSchema">
+<p:complexTypeDefinition i:nil="true" ref="xsd..type.topLevelSimpleType"/>
+</p:elementDeclaration>
+<p:elementDeclaration abstract="false" disallowedSubstitutions="restriction extension substitution" id="xsd..elt.totalDigits" name="totalDigits" nillable="false" scope="global" targetNamespace="http://www.w3.org/2001/XMLSchema">
+<p:complexTypeDefinition abstract="false" derivationMethod="restriction" id="xsd..type._anon_1064" targetNamespace="http://www.w3.org/2001/XMLSchema">
+<p:complexTypeDefinition i:nil="true" ref="xsd..type.numFacet"/>
+<p:attributeUse required="false">
+<p:attributeDeclaration i:nil="true" name="fixed" ref="attr.fixed.1029"/>
+<p:valueConstraint value="false" variety="default"/>
+</p:attributeUse>
+<p:attributeUse required="false">
+<p:attributeDeclaration i:nil="true" name="id" ref="attr.id.35"/>
+</p:attributeUse>
+<p:attributeUse required="true">
+<p:attributeDeclaration id="attr.value.1060" name="value" scope="local">
+<p:atomic i:nil="true" ref="xsd..type.positiveInteger"/>
+</p:attributeDeclaration>
+</p:attributeUse>
+<p:wildcard processContents="lax">
+<p:namespaceConstraint namespaces="http://www.w3.org/2001/XMLSchema ##none" variety="negative"/>
+</p:wildcard>
+<p:contentType variety="elementOnly">
+<p:particle maxOccurs="1" minOccurs="1">
+<p:modelGroup compositor="sequence">
+<p:particle maxOccurs="1" minOccurs="0">
+<p:elementDeclaration i:nil="true" ref="xsd..elt.annotation"/>
+</p:particle>
+</p:modelGroup>
+</p:particle>
+</p:contentType>
+</p:complexTypeDefinition>
+</p:elementDeclaration>
+<p:elementDeclaration abstract="false" disallowedSubstitutions="restriction extension substitution" id="xsd..elt.union" name="union" nillable="false" scope="global" targetNamespace="http://www.w3.org/2001/XMLSchema">
+<p:complexTypeDefinition abstract="false" derivationMethod="extension" id="xsd..type._anon_1025" targetNamespace="http://www.w3.org/2001/XMLSchema">
+<p:complexTypeDefinition i:nil="true" ref="xsd..type.annotated"/>
+<p:attributeUse required="false">
+<p:attributeDeclaration id="attr.memberTypes.1023" name="memberTypes" scope="local">
+<p:list id="xsd..type._anon_1022" targetNamespace="http://www.w3.org/2001/XMLSchema">
+<p:atomic i:nil="true" ref="anySimpleType"/>
+<p:whiteSpace fixed="true" value="collapse"/>
+<p:atomic i:nil="true" ref="QName"/>
+</p:list>
+</p:attributeDeclaration>
+</p:attributeUse>
+<p:attributeUse required="false">
+<p:attributeDeclaration i:nil="true" name="id" ref="attr.id.35"/>
+</p:attributeUse>
+<p:wildcard processContents="lax">
+<p:namespaceConstraint namespaces="http://www.w3.org/2001/XMLSchema ##none" variety="negative"/>
+</p:wildcard>
+<p:contentType variety="elementOnly">
+<p:particle maxOccurs="1" minOccurs="1">
+<p:modelGroup compositor="sequence">
+<p:particle maxOccurs="1" minOccurs="0">
+<p:elementDeclaration i:nil="true" ref="xsd..elt.annotation"/>
+</p:particle>
+<p:particle maxOccurs="1" minOccurs="1">
+<p:modelGroup compositor="sequence">
+<p:particle maxOccurs="unbounded" minOccurs="0">
+<p:elementDeclaration abstract="false" id="xsd..elt.simpleType.1017" name="simpleType" nillable="false" scope="local" targetNamespace="http://www.w3.org/2001/XMLSchema">
+<p:complexTypeDefinition i:nil="true" ref="xsd..type.localSimpleType"/>
+</p:elementDeclaration>
+</p:particle>
+</p:modelGroup>
+</p:particle>
+</p:modelGroup>
+</p:particle>
+</p:contentType>
+</p:complexTypeDefinition>
+</p:elementDeclaration>
+<p:elementDeclaration abstract="false" disallowedSubstitutions="restriction extension substitution" id="xsd..elt.unique" name="unique" nillable="false" scope="global" targetNamespace="http://www.w3.org/2001/XMLSchema">
+<p:complexTypeDefinition i:nil="true" ref="xsd..type.keybase"/>
+</p:elementDeclaration>
+<p:elementDeclaration abstract="false" disallowedSubstitutions="restriction extension substitution" id="xsd..elt.whiteSpace" name="whiteSpace" nillable="false" scope="global" targetNamespace="http://www.w3.org/2001/XMLSchema">
+<p:complexTypeDefinition abstract="false" derivationMethod="restriction" id="xsd..type._anon_1089" targetNamespace="http://www.w3.org/2001/XMLSchema">
+<p:complexTypeDefinition i:nil="true" ref="xsd..type.facet"/>
+<p:attributeUse required="false">
+<p:attributeDeclaration i:nil="true" name="fixed" ref="attr.fixed.1029"/>
+<p:valueConstraint value="false" variety="default"/>
+</p:attributeUse>
+<p:attributeUse required="false">
+<p:attributeDeclaration i:nil="true" name="id" ref="attr.id.35"/>
+</p:attributeUse>
+<p:attributeUse required="true">
+<p:attributeDeclaration id="attr.value.1085" name="value" scope="local">
+<p:atomic id="xsd..type._anon_1084" targetNamespace="http://www.w3.org/2001/XMLSchema">
+<p:atomic i:nil="true" ref="xsd..type.NMTOKEN"/>
+<p:atomic i:nil="true" ref="string"/>
+<p:pattern i:nil="true" ref="bip..2"/>
+<p:pattern i:nil="true" ref="bip..3"/>
+<p:enumeration value="preserve"/>
+<p:enumeration value="replace"/>
+<p:enumeration value="collapse"/>
+<p:whiteSpace fixed="false" value="collapse"/>
+</p:atomic>
+</p:attributeDeclaration>
+</p:attributeUse>
+<p:wildcard processContents="lax">
+<p:namespaceConstraint namespaces="http://www.w3.org/2001/XMLSchema ##none" variety="negative"/>
+</p:wildcard>
+<p:contentType variety="elementOnly">
+<p:particle maxOccurs="1" minOccurs="1">
+<p:modelGroup compositor="sequence">
+<p:particle maxOccurs="1" minOccurs="0">
+<p:elementDeclaration i:nil="true" ref="xsd..elt.annotation"/>
+</p:particle>
+</p:modelGroup>
+</p:particle>
+</p:contentType>
+</p:complexTypeDefinition>
+</p:elementDeclaration>
+<p:modelGroupDefinition id="xsd..mg.allModel" name="allModel" targetNamespace="http://www.w3.org/2001/XMLSchema">
+<p:modelGroup compositor="sequence">
+<p:particle maxOccurs="1" minOccurs="0">
+<p:elementDeclaration i:nil="true" ref="xsd..elt.annotation"/>
+</p:particle>
+<p:particle maxOccurs="unbounded" minOccurs="0">
+<p:modelGroup compositor="choice">
+<p:particle maxOccurs="1" minOccurs="1">
+<p:elementDeclaration abstract="false" id="xsd..elt.element.501" name="element" nillable="false" targetNamespace="http://www.w3.org/2001/XMLSchema">
+<p:complexTypeDefinition i:nil="true" ref="xsd..type.narrowMaxMin"/>
+</p:elementDeclaration>
+</p:particle>
+</p:modelGroup>
+</p:particle>
+</p:modelGroup>
+</p:modelGroupDefinition>
+<p:modelGroupDefinition id="xsd..mg.attrDecls" name="attrDecls" targetNamespace="http://www.w3.org/2001/XMLSchema">
+<p:modelGroup compositor="sequence">
+<p:particle maxOccurs="unbounded" minOccurs="0">
+<p:modelGroup compositor="choice">
+<p:particle maxOccurs="1" minOccurs="1">
+<p:elementDeclaration abstract="false" id="xsd..elt.attribute.204" name="attribute" nillable="false" targetNamespace="http://www.w3.org/2001/XMLSchema">
+<p:complexTypeDefinition i:nil="true" ref="xsd..type.attribute"/>
+</p:elementDeclaration>
+</p:particle>
+<p:particle maxOccurs="1" minOccurs="1">
+<p:elementDeclaration abstract="false" id="xsd..elt.attributeGroup.206" name="attributeGroup" nillable="false" targetNamespace="http://www.w3.org/2001/XMLSchema">
+<p:complexTypeDefinition i:nil="true" ref="xsd..type.attributeGroupRef"/>
+</p:elementDeclaration>
+</p:particle>
+</p:modelGroup>
+</p:particle>
+<p:particle maxOccurs="1" minOccurs="0">
+<p:elementDeclaration i:nil="true" ref="xsd..elt.anyAttribute"/>
+</p:particle>
+</p:modelGroup>
+</p:modelGroupDefinition>
+<p:modelGroupDefinition id="xsd..mg.complexTypeModel" name="complexTypeModel" targetNamespace="http://www.w3.org/2001/XMLSchema">
+<p:modelGroup compositor="choice">
+<p:particle maxOccurs="1" minOccurs="1">
+<p:elementDeclaration i:nil="true" ref="xsd..elt.simpleContent"/>
+</p:particle>
+<p:particle maxOccurs="1" minOccurs="1">
+<p:elementDeclaration i:nil="true" ref="xsd..elt.complexContent"/>
+</p:particle>
+<p:particle maxOccurs="1" minOccurs="1">
+<p:modelGroup compositor="sequence">
+<p:particle maxOccurs="1" minOccurs="0">
+<p:modelGroup i:nil="true" ref="xsd..mg.typeDefParticle"/>
+</p:particle>
+<p:particle maxOccurs="1" minOccurs="1">
+<p:modelGroup i:nil="true" ref="xsd..mg.attrDecls"/>
+</p:particle>
+</p:modelGroup>
+</p:particle>
+</p:modelGroup>
+</p:modelGroupDefinition>
+<p:modelGroupDefinition id="xsd..mg.facets" name="facets" targetNamespace="http://www.w3.org/2001/XMLSchema">
+<p:modelGroup compositor="choice">
+<p:particle maxOccurs="1" minOccurs="1">
+<p:elementDeclaration i:nil="true" ref="xsd..elt.minExclusive"/>
+</p:particle>
+<p:particle maxOccurs="1" minOccurs="1">
+<p:elementDeclaration i:nil="true" ref="xsd..elt.minInclusive"/>
+</p:particle>
+<p:particle maxOccurs="1" minOccurs="1">
+<p:elementDeclaration i:nil="true" ref="xsd..elt.maxExclusive"/>
+</p:particle>
+<p:particle maxOccurs="1" minOccurs="1">
+<p:elementDeclaration i:nil="true" ref="xsd..elt.maxInclusive"/>
+</p:particle>
+<p:particle maxOccurs="1" minOccurs="1">
+<p:elementDeclaration i:nil="true" ref="xsd..elt.totalDigits"/>
+</p:particle>
+<p:particle maxOccurs="1" minOccurs="1">
+<p:elementDeclaration i:nil="true" ref="xsd..elt.fractionDigits"/>
+</p:particle>
+<p:particle maxOccurs="1" minOccurs="1">
+<p:elementDeclaration i:nil="true" ref="xsd..elt.length"/>
+</p:particle>
+<p:particle maxOccurs="1" minOccurs="1">
+<p:elementDeclaration i:nil="true" ref="xsd..elt.minLength"/>
+</p:particle>
+<p:particle maxOccurs="1" minOccurs="1">
+<p:elementDeclaration i:nil="true" ref="xsd..elt.maxLength"/>
+</p:particle>
+<p:particle maxOccurs="1" minOccurs="1">
+<p:elementDeclaration i:nil="true" ref="xsd..elt.enumeration"/>
+</p:particle>
+<p:particle maxOccurs="1" minOccurs="1">
+<p:elementDeclaration i:nil="true" ref="xsd..elt.whiteSpace"/>
+</p:particle>
+<p:particle maxOccurs="1" minOccurs="1">
+<p:elementDeclaration i:nil="true" ref="xsd..elt.pattern"/>
+</p:particle>
+</p:modelGroup>
+</p:modelGroupDefinition>
+<p:modelGroupDefinition id="xsd..mg.identityConstraint" name="identityConstraint" targetNamespace="http://www.w3.org/2001/XMLSchema">
+<p:modelGroup compositor="choice">
+<p:particle maxOccurs="1" minOccurs="1">
+<p:elementDeclaration i:nil="true" ref="xsd..elt.unique"/>
+</p:particle>
+<p:particle maxOccurs="1" minOccurs="1">
+<p:elementDeclaration i:nil="true" ref="xsd..elt.key"/>
+</p:particle>
+<p:particle maxOccurs="1" minOccurs="1">
+<p:elementDeclaration i:nil="true" ref="xsd..elt.keyref"/>
+</p:particle>
+</p:modelGroup>
+</p:modelGroupDefinition>
+<p:modelGroupDefinition id="xsd..mg.nestedParticle" name="nestedParticle" targetNamespace="http://www.w3.org/2001/XMLSchema">
+<p:modelGroup compositor="choice">
+<p:particle maxOccurs="1" minOccurs="1">
+<p:elementDeclaration abstract="false" id="xsd..elt.element.148" name="element" nillable="false" targetNamespace="http://www.w3.org/2001/XMLSchema">
+<p:complexTypeDefinition i:nil="true" ref="xsd..type.localElement"/>
+</p:elementDeclaration>
+</p:particle>
+<p:particle maxOccurs="1" minOccurs="1">
+<p:elementDeclaration abstract="false" id="xsd..elt.group.150" name="group" nillable="false" targetNamespace="http://www.w3.org/2001/XMLSchema">
+<p:complexTypeDefinition i:nil="true" ref="xsd..type.groupRef"/>
+</p:elementDeclaration>
+</p:particle>
+<p:particle maxOccurs="1" minOccurs="1">
+<p:elementDeclaration i:nil="true" ref="xsd..elt.choice"/>
+</p:particle>
+<p:particle maxOccurs="1" minOccurs="1">
+<p:elementDeclaration i:nil="true" ref="xsd..elt.sequence"/>
+</p:particle>
+<p:particle maxOccurs="1" minOccurs="1">
+<p:elementDeclaration i:nil="true" ref="xsd..elt.any"/>
+</p:particle>
+</p:modelGroup>
+</p:modelGroupDefinition>
+<p:modelGroupDefinition id="xsd..mg.particle" name="particle" targetNamespace="http://www.w3.org/2001/XMLSchema">
+<p:modelGroup compositor="choice">
+<p:particle maxOccurs="1" minOccurs="1">
+<p:elementDeclaration abstract="false" id="xsd..elt.element.157" name="element" nillable="false" targetNamespace="http://www.w3.org/2001/XMLSchema">
+<p:complexTypeDefinition i:nil="true" ref="xsd..type.localElement"/>
+</p:elementDeclaration>
+</p:particle>
+<p:particle maxOccurs="1" minOccurs="1">
+<p:elementDeclaration abstract="false" id="xsd..elt.group.159" name="group" nillable="false" targetNamespace="http://www.w3.org/2001/XMLSchema">
+<p:complexTypeDefinition i:nil="true" ref="xsd..type.groupRef"/>
+</p:elementDeclaration>
+</p:particle>
+<p:particle maxOccurs="1" minOccurs="1">
+<p:elementDeclaration i:nil="true" ref="xsd..elt.all"/>
+</p:particle>
+<p:particle maxOccurs="1" minOccurs="1">
+<p:elementDeclaration i:nil="true" ref="xsd..elt.choice"/>
+</p:particle>
+<p:particle maxOccurs="1" minOccurs="1">
+<p:elementDeclaration i:nil="true" ref="xsd..elt.sequence"/>
+</p:particle>
+<p:particle maxOccurs="1" minOccurs="1">
+<p:elementDeclaration i:nil="true" ref="xsd..elt.any"/>
+</p:particle>
+</p:modelGroup>
+</p:modelGroupDefinition>
+<p:modelGroupDefinition id="xsd..mg.redefinable" name="redefinable" targetNamespace="http://www.w3.org/2001/XMLSchema">
+<p:modelGroup compositor="choice">
+<p:particle maxOccurs="1" minOccurs="1">
+<p:elementDeclaration i:nil="true" ref="xsd..elt.simpleType"/>
+</p:particle>
+<p:particle maxOccurs="1" minOccurs="1">
+<p:elementDeclaration i:nil="true" ref="xsd..elt.complexType"/>
+</p:particle>
+<p:particle maxOccurs="1" minOccurs="1">
+<p:elementDeclaration i:nil="true" ref="xsd..elt.group"/>
+</p:particle>
+<p:particle maxOccurs="1" minOccurs="1">
+<p:elementDeclaration i:nil="true" ref="xsd..elt.attributeGroup"/>
+</p:particle>
+</p:modelGroup>
+</p:modelGroupDefinition>
+<p:modelGroupDefinition id="xsd..mg.schemaTop" name="schemaTop" targetNamespace="http://www.w3.org/2001/XMLSchema">
+<p:modelGroup compositor="choice">
+<p:particle maxOccurs="1" minOccurs="1">
+<p:modelGroup i:nil="true" ref="xsd..mg.redefinable"/>
+</p:particle>
+<p:particle maxOccurs="1" minOccurs="1">
+<p:elementDeclaration i:nil="true" ref="xsd..elt.element"/>
+</p:particle>
+<p:particle maxOccurs="1" minOccurs="1">
+<p:elementDeclaration i:nil="true" ref="xsd..elt.attribute"/>
+</p:particle>
+<p:particle maxOccurs="1" minOccurs="1">
+<p:elementDeclaration i:nil="true" ref="xsd..elt.notation"/>
+</p:particle>
+</p:modelGroup>
+</p:modelGroupDefinition>
+<p:modelGroupDefinition id="xsd..mg.simpleDerivation" name="simpleDerivation" targetNamespace="http://www.w3.org/2001/XMLSchema">
+<p:modelGroup compositor="choice">
+<p:particle maxOccurs="1" minOccurs="1">
+<p:elementDeclaration i:nil="true" ref="xsd..elt.restriction"/>
+</p:particle>
+<p:particle maxOccurs="1" minOccurs="1">
+<p:elementDeclaration i:nil="true" ref="xsd..elt.list"/>
+</p:particle>
+<p:particle maxOccurs="1" minOccurs="1">
+<p:elementDeclaration i:nil="true" ref="xsd..elt.union"/>
+</p:particle>
+</p:modelGroup>
+</p:modelGroupDefinition>
+<p:modelGroupDefinition id="xsd..mg.simpleRestrictionModel" name="simpleRestrictionModel" targetNamespace="http://www.w3.org/2001/XMLSchema">
+<p:modelGroup compositor="sequence">
+<p:particle maxOccurs="1" minOccurs="0">
+<p:elementDeclaration abstract="false" id="xsd..elt.simpleType.996" name="simpleType" nillable="false" targetNamespace="http://www.w3.org/2001/XMLSchema">
+<p:complexTypeDefinition i:nil="true" ref="xsd..type.localSimpleType"/>
+</p:elementDeclaration>
+</p:particle>
+<p:particle maxOccurs="unbounded" minOccurs="0">
+<p:modelGroup i:nil="true" ref="xsd..mg.facets"/>
+</p:particle>
+</p:modelGroup>
+</p:modelGroupDefinition>
+<p:modelGroupDefinition id="xsd..mg.typeDefParticle" name="typeDefParticle" targetNamespace="http://www.w3.org/2001/XMLSchema">
+<p:modelGroup compositor="choice">
+<p:particle maxOccurs="1" minOccurs="1">
+<p:elementDeclaration abstract="false" id="xsd..elt.group.141" name="group" nillable="false" targetNamespace="http://www.w3.org/2001/XMLSchema">
+<p:complexTypeDefinition i:nil="true" ref="xsd..type.groupRef"/>
+</p:elementDeclaration>
+</p:particle>
+<p:particle maxOccurs="1" minOccurs="1">
+<p:elementDeclaration i:nil="true" ref="xsd..elt.all"/>
+</p:particle>
+<p:particle maxOccurs="1" minOccurs="1">
+<p:elementDeclaration i:nil="true" ref="xsd..elt.choice"/>
+</p:particle>
+<p:particle maxOccurs="1" minOccurs="1">
+<p:elementDeclaration i:nil="true" ref="xsd..elt.sequence"/>
+</p:particle>
+</p:modelGroup>
+</p:modelGroupDefinition>
+<p:union id="xsd..type.allNNI" name="allNNI" targetNamespace="http://www.w3.org/2001/XMLSchema">
+<p:atomic i:nil="true" ref="anySimpleType"/>
+<p:atomic i:nil="true" ref="xsd..type._anon_125"/>
+<p:atomic i:nil="true" ref="xsd..type.nonNegativeInteger"/>
+</p:union>
+<p:union id="xsd..type.blockSet" name="blockSet" targetNamespace="http://www.w3.org/2001/XMLSchema">
+<p:atomic i:nil="true" ref="anySimpleType"/>
+<p:atomic id="xsd..type._anon_335" targetNamespace="http://www.w3.org/2001/XMLSchema">
+<p:atomic i:nil="true" ref="xsd..type.token"/>
+<p:atomic i:nil="true" ref="string"/>
+<p:enumeration value="#all"/>
+<p:whiteSpace fixed="false" value="collapse"/>
+</p:atomic>
+<p:list id="xsd..type._anon_342" targetNamespace="http://www.w3.org/2001/XMLSchema">
+<p:atomic i:nil="true" ref="anySimpleType"/>
+<p:whiteSpace fixed="true" value="collapse"/>
+<p:atomic id="xsd..type._anon_340" targetNamespace="http://www.w3.org/2001/XMLSchema">
+<p:atomic i:nil="true" ref="xsd..type.derivationControl"/>
+<p:atomic i:nil="true" ref="string"/>
+<p:pattern i:nil="true" ref="bip..2"/>
+<p:pattern i:nil="true" ref="bip..3"/>
+<p:enumeration value="extension"/>
+<p:enumeration value="restriction"/>
+<p:enumeration value="substitution"/>
+<p:whiteSpace fixed="false" value="collapse"/>
+</p:atomic>
+</p:list>
+</p:union>
+<p:union id="xsd..type.derivationSet" name="derivationSet" targetNamespace="http://www.w3.org/2001/XMLSchema">
+<p:atomic i:nil="true" ref="anySimpleType"/>
+<p:atomic id="xsd..type._anon_65" targetNamespace="http://www.w3.org/2001/XMLSchema">
+<p:atomic i:nil="true" ref="xsd..type.token"/>
+<p:atomic i:nil="true" ref="string"/>
+<p:enumeration value="#all"/>
+<p:whiteSpace fixed="false" value="collapse"/>
+</p:atomic>
+<p:list id="xsd..type._anon_67" targetNamespace="http://www.w3.org/2001/XMLSchema">
+<p:atomic i:nil="true" ref="anySimpleType"/>
+<p:whiteSpace fixed="true" value="collapse"/>
+<p:atomic i:nil="true" ref="xsd..type.reducedDerivationControl"/>
+</p:list>
+</p:union>
+<p:union id="xsd..type.fullDerivationSet" name="fullDerivationSet" targetNamespace="http://www.w3.org/2001/XMLSchema">
+<p:atomic i:nil="true" ref="anySimpleType"/>
+<p:atomic id="xsd..type._anon_80" targetNamespace="http://www.w3.org/2001/XMLSchema">
+<p:atomic i:nil="true" ref="xsd..type.token"/>
+<p:atomic i:nil="true" ref="string"/>
+<p:enumeration value="#all"/>
+<p:whiteSpace fixed="false" value="collapse"/>
+</p:atomic>
+<p:list id="xsd..type._anon_82" targetNamespace="http://www.w3.org/2001/XMLSchema">
+<p:atomic i:nil="true" ref="anySimpleType"/>
+<p:whiteSpace fixed="true" value="collapse"/>
+<p:atomic i:nil="true" ref="xsd..type.typeDerivationControl"/>
+</p:list>
+</p:union>
+<p:union id="xsd..type.namespaceList" name="namespaceList" targetNamespace="http://www.w3.org/2001/XMLSchema">
+<p:atomic i:nil="true" ref="anySimpleType"/>
+<p:atomic id="xsd..type._anon_577" targetNamespace="http://www.w3.org/2001/XMLSchema">
+<p:atomic i:nil="true" ref="xsd..type.token"/>
+<p:atomic i:nil="true" ref="string"/>
+<p:enumeration value="##any"/>
+<p:enumeration value="##other"/>
+<p:whiteSpace fixed="false" value="collapse"/>
+</p:atomic>
+<p:list id="xsd..type._anon_585" targetNamespace="http://www.w3.org/2001/XMLSchema">
+<p:atomic i:nil="true" ref="anySimpleType"/>
+<p:whiteSpace fixed="true" value="collapse"/>
+<p:union id="xsd..type._anon_583" targetNamespace="http://www.w3.org/2001/XMLSchema">
+<p:atomic i:nil="true" ref="anySimpleType"/>
+<p:atomic id="xsd..type._anon_581" targetNamespace="http://www.w3.org/2001/XMLSchema">
+<p:atomic i:nil="true" ref="xsd..type.token"/>
+<p:atomic i:nil="true" ref="string"/>
+<p:enumeration value="##targetNamespace"/>
+<p:enumeration value="##local"/>
+<p:whiteSpace fixed="false" value="collapse"/>
+</p:atomic>
+<p:atomic i:nil="true" ref="anyURI"/>
+</p:union>
+</p:list>
+</p:union>
+<p:union id="xsd..type.simpleDerivationSet" name="simpleDerivationSet" targetNamespace="http://www.w3.org/2001/XMLSchema">
+<p:atomic i:nil="true" ref="anySimpleType"/>
+<p:atomic id="xsd..type._anon_940" targetNamespace="http://www.w3.org/2001/XMLSchema">
+<p:atomic i:nil="true" ref="xsd..type.token"/>
+<p:atomic i:nil="true" ref="string"/>
+<p:enumeration value="#all"/>
+<p:whiteSpace fixed="false" value="collapse"/>
+</p:atomic>
+<p:list id="xsd..type._anon_947" targetNamespace="http://www.w3.org/2001/XMLSchema">
+<p:atomic i:nil="true" ref="anySimpleType"/>
+<p:whiteSpace fixed="true" value="collapse"/>
+<p:atomic id="xsd..type._anon_945" targetNamespace="http://www.w3.org/2001/XMLSchema">
+<p:atomic i:nil="true" ref="xsd..type.derivationControl"/>
+<p:atomic i:nil="true" ref="string"/>
+<p:pattern i:nil="true" ref="bip..2"/>
+<p:pattern i:nil="true" ref="bip..3"/>
+<p:enumeration value="list"/>
+<p:enumeration value="union"/>
+<p:enumeration value="restriction"/>
+<p:whiteSpace fixed="false" value="collapse"/>
+</p:atomic>
+</p:list>
+</p:union>
+<p:schemaDocument documentLocation="file:///d:/work/WWW/2001/XMLSchema.xsd"/>
+</p:namespaceSchemaInformation>
+<p:namespaceSchemaInformation schemaNamespace="http://www.w3.org/XML/1998/namespace">
+<p:attributeDeclaration id="xml..attr.lang" name="lang" scope="global" targetNamespace="http://www.w3.org/XML/1998/namespace">
+<p:atomic i:nil="true" ref="xsd..type.language"/>
+</p:attributeDeclaration>
+<p:attributeDeclaration id="xml..attr.base" name="base" scope="global" targetNamespace="http://www.w3.org/XML/1998/namespace">
+<p:atomic i:nil="true" ref="anyURI"/>
+</p:attributeDeclaration>
+<p:attributeDeclaration id="xml..attr.id" name="id" scope="global" targetNamespace="http://www.w3.org/XML/1998/namespace">
+<p:atomic i:nil="true" ref="xsd..type.ID"/>
+</p:attributeDeclaration>
+<p:attributeDeclaration id="xml..attr.space" name="space" scope="global" targetNamespace="http://www.w3.org/XML/1998/namespace">
+<p:atomic id="xml..type._anon_17" targetNamespace="http://www.w3.org/XML/1998/namespace">
+<p:atomic i:nil="true" ref="xsd..type.NCName"/>
+<p:atomic i:nil="true" ref="string"/>
+<p:pattern i:nil="true" ref="bip..0"/>
+<p:pattern i:nil="true" ref="bip..1"/>
+<p:pattern i:nil="true" ref="bip..5"/>
+<p:enumeration value="default"/>
+<p:enumeration value="preserve"/>
+<p:whiteSpace fixed="false" value="collapse"/>
+</p:atomic>
+</p:attributeDeclaration>
+<p:attributeGroupDefinition id="xml..ag.specialAttrs" name="specialAttrs" targetNamespace="http://www.w3.org/XML/1998/namespace">
+<p:attributeUse required="false">
+<p:attributeDeclaration i:nil="true" name="space" ref="xml..attr.space" tns="http://www.w3.org/XML/1998/namespace"/>
+</p:attributeUse>
+<p:attributeUse required="false">
+<p:attributeDeclaration i:nil="true" name="lang" ref="xml..attr.lang" tns="http://www.w3.org/XML/1998/namespace"/>
+</p:attributeUse>
+<p:attributeUse required="false">
+<p:attributeDeclaration i:nil="true" name="base" ref="xml..attr.base" tns="http://www.w3.org/XML/1998/namespace"/>
+</p:attributeUse>
+</p:attributeGroupDefinition>
+<p:schemaDocument documentLocation="http://www.w3.org/2001/xml.xsd"/>
+</p:namespaceSchemaInformation>
+</p:schema>

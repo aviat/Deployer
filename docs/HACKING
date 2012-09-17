@@ -1,0 +1,121 @@
+==========
+EXCEPTIONS
+==========
+
+All methods must report errors through exceptions, and success through a return variables. The raised exception must
+always be a class descendant from CustomError (thedeployer/packages/customexceptions.py). The class CustomError uses
+AppLoger to log the error to a file, and, if backtracing is enabled, uses AppBacktrace to write the backtrace to a file.
+
+Exceptions to note are:
+
+1) InvalidParameterError: A parameter passed to a method is invalid.
+Example: raise InvalidParameterError("command", "Command cannot be empty")
+
+2) MissingParameterError: A parameter required by a function is missing.
+
+3) KeyNotFoundError: The required key was not found in a dictionary.
+
+4) NotSupportedError: The method is not allowed in a class, for example, in case of a class not needing to override a
+parent's behaviour. It should also be used for all abstract classes in the constructor.
+Example: class X(object): def __init__(self): if self.__class__ == X: raise NotSupportedError()
+
+Define all exceptions in thedeployer/packages/customexceptions.py, precede before each class a comment describing at
+least one class that uses this exception.
+
+=======
+LOGGING
+=======
+
+Logging is done through the class AppLogger (thedeployer/packages/logger.py). You can use this path to report log
+entries of varying levels. The supported levels are DEBUG, INFO, WARNING, ERROR and CRITICAL.
+
+INFO messages describe normal behvaiour, like "Connected to FTP server at localhost:21 with username leaf.", and we
+won't be relying on CRITICAL messages most of the time, but rather use ERROR logs to denote stopping errors.
+
+Logging in Python is expensive, since it cannot be filtered in compile-time like in C, so use it wisely, specially the
+INFO and DEBUG calls. Usually you won't have to report ERROR logs since when you raise an exception, these are added
+automatically to the log file.
+
+================
+CODE STYLE GUIDE
+================
+
+Here are quick style guidelines:
+
+1) Names of methods and variables should be lowercase, with words separated by an underscore.
+   CORRECT: get_variable. INCORRECT: GetVar or Get_var or getVar
+
+2) Class names are Camel Case.
+   CORRECT: AppLoger. INCORRECT: App_Logger or Applogger
+
+3) Never use shortcuts in naming either methods or variables.
+   CORRECT: get_variable, current_value. INCORRECT: get_var, val
+
+4) Private member variables should start with double underscores.
+   CORRECT: __my_variable = None. INCORRECT: my_variable = None.
+
+5) Always declare member variables (whether instance or class variables in the class definition, so that it is easy
+   to know what members a class have.
+   Example:
+     class X:
+       """@my_public_variable: Used for storing public data."""
+       """@__my_private_variable: Used for storing public data."""
+       my_public_variable = None
+       __my_private_variable = None
+
+6) Define static methods using @classmethod.
+   Example:
+     @classmethod
+     def verify_required_keys(cls, arguments, required_keys):
+       pass
+
+7) Separate blocks of logically-related behaviour. If you have a 20-line function, do not write them one line after
+   the other with no spacing lines between them. Group logically related parts together. For example, the first few
+   lines could initialize some variables, then an empty line, then a group of lines that does some processing, then an
+   empty line, then one line that returns the result.
+   Example:
+     def pop(self):
+
+		if len(self.__stack) == 0:
+			raise StackEmptyError()
+
+		top_object = self.__stack[-1]
+		del self.__stack[-1]
+
+		return top_object
+
+=========================
+DOCUMENTATION STYLE GUIDE
+=========================
+
+1) The class's documentation seciton should be separate from the class declaration and the first member variable or
+   method by one line on each side.
+
+2) You should declare all member variables, and document each of them. Pay careful attention to maintain the consistency
+   of your documentation.
+   Example:
+     class X:
+       """@__my_private_variable: Used for storing public data."""
+       __my_private_variable = None
+
+3) Document methods by specifying their behaviour, their parameters, their return type, their return value, and the
+   exceptions they raise. If they use another function that could raise exceptions, write a reference to that.
+   Example:
+     def get_instance(self, arguments):
+       """
+       Creates an instance of a Command object and returns it.
+
+       @param arguments: A dictionary of arguments that are sent to the constructor.
+         Expected keys are "command" and "destination".
+         Optional keys are "retry".
+
+       @rtype: ExecuteCommand
+       @return: An instance of ExecuteCommand
+
+       @raise InvalidParameterError: If the required argument(s) are not specified.
+       @raise Others: All other exceptions raised by the constructor.
+       """
+
+       pass
+
+4) Separate the documentation of the method from the body of the method by one line.

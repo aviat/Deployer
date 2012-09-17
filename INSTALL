@@ -1,0 +1,28 @@
+Installation Instructions for Linux-based OSes
+==============================================
+
+The Deployer uses Python's setuptools for installation and building. To
+install it on a Linux-based OS, do the following steps:
+
+	tar -xzvf thedeloyer-1.0.tar.gz
+	cd thedeloyer-1.0
+	python setup.py install
+
+Troubleshooting:
+
+1. If you received an error about not finding "mysql_config", then you need to
+install the MySQL client library. On Debian or Ubuntu, you could do that with:
+
+	sudo apt-get install libmysqlclient15-dev
+
+2.
+
+apt-gets:
+libmysqlclient15 (for mysqldump and mysql)
+
+Installation Instructions for Windows
+=====================================
+
+Installation Instructions for Mac OS X
+======================================
+

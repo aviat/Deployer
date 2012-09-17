@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/i-a6/!svn/ver/13/thedeployer/libs/pysvn/Kit/Win32-1.4
+END
+setup_version_handling.py
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/i-a6/!svn/ver/13/thedeployer/libs/pysvn/Kit/Win32-1.4/setup_version_handling.py
+END
+msvc71_system_files.iss
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/i-a6/!svn/ver/13/thedeployer/libs/pysvn/Kit/Win32-1.4/msvc71_system_files.iss
+END
+pysvn.iss
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/i-a6/!svn/ver/13/thedeployer/libs/pysvn/Kit/Win32-1.4/pysvn.iss
+END
+makefile
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/i-a6/!svn/ver/13/thedeployer/libs/pysvn/Kit/Win32-1.4/makefile
+END

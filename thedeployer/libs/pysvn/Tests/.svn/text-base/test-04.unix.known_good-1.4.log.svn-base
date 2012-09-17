@@ -1,0 +1,92 @@
+WorkDir: /Users/barry/wc/svn/pysvn/Extension
+PYTHON: /usr/bin/python2.3
+Username: barry
+Info: Command: mkdir testroot-04
+Info: Command: cd testroot-04
+Info: Command: mkdir tmp
+Info: Command: svnadmin create /Users/barry/wc/svn/pysvn/Extension/Tests/testroot-04/repos
+Info: Testing - mkdir
+Info: Command: /usr/bin/python2.3 /Users/barry/wc/svn/pysvn/Extension/Examples/Client/svn_cmd.py --pysvn-testing 01.01.00 --config-dir /Users/barry/wc/svn/pysvn/Extension/Tests/testroot-04/configdir mkdir file:///Users/barry/wc/svn/pysvn/Extension/Tests/testroot-04/repos/trunk -m test-04 add trunk
+Info: Command: /usr/bin/python2.3 /Users/barry/wc/svn/pysvn/Extension/Examples/Client/svn_cmd.py --pysvn-testing 01.01.00 --config-dir /Users/barry/wc/svn/pysvn/Extension/Tests/testroot-04/configdir mkdir file:///Users/barry/wc/svn/pysvn/Extension/Tests/testroot-04/repos/trunk/test -m test-04 add test
+Info: Install hooks
+Info: Command: /usr/bin/python2.3 /Users/barry/wc/svn/pysvn/Extension/Examples/Client/svn_cmd.py --pysvn-testing 01.01.00 --config-dir /Users/barry/wc/svn/pysvn/Extension/Tests/testroot-04/configdir mkdir file:///Users/barry/wc/svn/pysvn/Extension/Tests/testroot-04/repos/trunk/test/a -m pre-commit test 1
+Info: test_1.output start ----------------------------------------
+/usr/bin/python2.3 /Users/barry/wc/svn/pysvn/Extension/Tests/test_04_pre_commit_test_1.py /Users/barry/wc/svn/pysvn/Extension/Tests/testroot-04/repos 2-1
+Info: pre commit test 1
+Info: Transaction( /Users/barry/wc/svn/pysvn/Extension/Tests/testroot-04/repos, 2-1) ...
+Info: revproplist() ...
+svn:log: pre-commit test 1
+svn:check-locks: true
+svn:author: barry
+svn:date: 2006-04-21T19:04:40.770743Z
+Info: changed() ...
+trunk/test/a: action='A', kind=<node_kind.dir>, text_mod=0, prop_mod=0
+Info: test_1.output end ------------------------------------------
+Info: Add two files
+Info: Command: /usr/bin/python2.3 /Users/barry/wc/svn/pysvn/Extension/Examples/Client/svn_cmd.py --pysvn-testing 01.01.00 --config-dir /Users/barry/wc/svn/pysvn/Extension/Tests/testroot-04/configdir checkout file:///Users/barry/wc/svn/pysvn/Extension/Tests/testroot-04/repos/trunk/test /Users/barry/wc/svn/pysvn/Extension/Tests/testroot-04/wc
+A /Users/barry/wc/svn/pysvn/Extension/Tests/testroot-04/wc/a
+U /Users/barry/wc/svn/pysvn/Extension/Tests/testroot-04/wc
+Checked out revision 3
+Info: Command: /usr/bin/python2.3 /Users/barry/wc/svn/pysvn/Extension/Examples/Client/svn_cmd.py --pysvn-testing 01.01.00 --config-dir /Users/barry/wc/svn/pysvn/Extension/Tests/testroot-04/configdir add /Users/barry/wc/svn/pysvn/Extension/Tests/testroot-04/wc/file1.txt
+A /Users/barry/wc/svn/pysvn/Extension/Tests/testroot-04/wc/file1.txt
+Info: Command: /usr/bin/python2.3 /Users/barry/wc/svn/pysvn/Extension/Examples/Client/svn_cmd.py --pysvn-testing 01.01.00 --config-dir /Users/barry/wc/svn/pysvn/Extension/Tests/testroot-04/configdir add /Users/barry/wc/svn/pysvn/Extension/Tests/testroot-04/wc/a/file1.txt
+A /Users/barry/wc/svn/pysvn/Extension/Tests/testroot-04/wc/a/file1.txt
+Info: Command: /usr/bin/python2.3 /Users/barry/wc/svn/pysvn/Extension/Examples/Client/svn_cmd.py --pysvn-testing 01.01.00 --config-dir /Users/barry/wc/svn/pysvn/Extension/Tests/testroot-04/configdir checkin -m Add two files /Users/barry/wc/svn/pysvn/Extension/Tests/testroot-04/wc
+A wc/a/file1.txt
+A wc/file1.txt
+Revision 4
+Info: test_1.output start ----------------------------------------
+/usr/bin/python2.3 /Users/barry/wc/svn/pysvn/Extension/Tests/test_04_pre_commit_test_1.py /Users/barry/wc/svn/pysvn/Extension/Tests/testroot-04/repos 3-1
+Info: pre commit test 1
+Info: Transaction( /Users/barry/wc/svn/pysvn/Extension/Tests/testroot-04/repos, 3-1) ...
+Info: revproplist() ...
+svn:log: Add two files
+svn:check-locks: true
+svn:author: barry
+svn:date: 2006-04-21T19:04:43.354638Z
+Info: changed() ...
+trunk/test/a/file1.txt: action='A', kind=<node_kind.file>, text_mod=1, prop_mod=0
+     contents: 'file1 A\n'
+trunk/test/file1.txt: action='A', kind=<node_kind.file>, text_mod=1, prop_mod=0
+     contents: 'file1 ROOT\n'
+Info: test_1.output end ------------------------------------------
+Info: Mod one file Mod one prop
+Info: Command: /usr/bin/python2.3 /Users/barry/wc/svn/pysvn/Extension/Examples/Client/svn_cmd.py --pysvn-testing 01.01.00 --config-dir /Users/barry/wc/svn/pysvn/Extension/Tests/testroot-04/configdir propset svn:eol-style native /Users/barry/wc/svn/pysvn/Extension/Tests/testroot-04/wc/a/file1.txt
+Info: Command: /usr/bin/python2.3 /Users/barry/wc/svn/pysvn/Extension/Examples/Client/svn_cmd.py --pysvn-testing 01.01.00 --config-dir /Users/barry/wc/svn/pysvn/Extension/Tests/testroot-04/configdir checkin -m Mod one file Mod one prop /Users/barry/wc/svn/pysvn/Extension/Tests/testroot-04/wc
+M wc/a/file1.txt
+M wc/file1.txt
+Revision 5
+Info: test_1.output start ----------------------------------------
+/usr/bin/python2.3 /Users/barry/wc/svn/pysvn/Extension/Tests/test_04_pre_commit_test_1.py /Users/barry/wc/svn/pysvn/Extension/Tests/testroot-04/repos 4-1
+Info: pre commit test 1
+Info: Transaction( /Users/barry/wc/svn/pysvn/Extension/Tests/testroot-04/repos, 4-1) ...
+Info: revproplist() ...
+svn:log: Mod one file Mod one prop
+svn:check-locks: true
+svn:author: barry
+svn:date: 2006-04-21T19:04:44.844214Z
+Info: changed() ...
+trunk/test/a/file1.txt: action='R', kind=<node_kind.file>, text_mod=0, prop_mod=1
+     svn:eol-style: native
+     contents: 'file1 A\n'
+trunk/test/file1.txt: action='R', kind=<node_kind.file>, text_mod=1, prop_mod=0
+     contents: 'file1 ROOT ln 2\n'
+Info: test_1.output end ------------------------------------------
+Info: Delete one file
+Info: Command: /usr/bin/python2.3 /Users/barry/wc/svn/pysvn/Extension/Examples/Client/svn_cmd.py --pysvn-testing 01.01.00 --config-dir /Users/barry/wc/svn/pysvn/Extension/Tests/testroot-04/configdir rm /Users/barry/wc/svn/pysvn/Extension/Tests/testroot-04/wc/a/file1.txt
+D /Users/barry/wc/svn/pysvn/Extension/Tests/testroot-04/wc/a/file1.txt
+Info: Command: /usr/bin/python2.3 /Users/barry/wc/svn/pysvn/Extension/Examples/Client/svn_cmd.py --pysvn-testing 01.01.00 --config-dir /Users/barry/wc/svn/pysvn/Extension/Tests/testroot-04/configdir checkin -m Delete one file /Users/barry/wc/svn/pysvn/Extension/Tests/testroot-04/wc
+D wc/a/file1.txt
+Revision 6
+Info: test_1.output start ----------------------------------------
+/usr/bin/python2.3 /Users/barry/wc/svn/pysvn/Extension/Tests/test_04_pre_commit_test_1.py /Users/barry/wc/svn/pysvn/Extension/Tests/testroot-04/repos 5-1
+Info: pre commit test 1
+Info: Transaction( /Users/barry/wc/svn/pysvn/Extension/Tests/testroot-04/repos, 5-1) ...
+Info: revproplist() ...
+svn:log: Delete one file
+svn:check-locks: true
+svn:author: barry
+svn:date: 2006-04-21T19:04:46.977889Z
+Info: changed() ...
+trunk/test/a/file1.txt: action='D', kind=<node_kind.file>, text_mod=0, prop_mod=0
+Info: test_1.output end ------------------------------------------

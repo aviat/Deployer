@@ -1,0 +1,197 @@
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/i-a6/!svn/ver/107/thedeployer/libs/XSV/compile
+END
+Wildcard.py
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/i-a6/!svn/ver/51/thedeployer/libs/XSV/compile/Wildcard.py
+END
+Element.py
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/i-a6/!svn/ver/51/thedeployer/libs/XSV/compile/Element.py
+END
+AbInitio.py
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/i-a6/!svn/ver/51/thedeployer/libs/XSV/compile/AbInitio.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/i-a6/!svn/ver/51/thedeployer/libs/XSV/compile/__init__.py
+END
+Schema.py
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/i-a6/!svn/ver/51/thedeployer/libs/XSV/compile/Schema.py
+END
+QName.py
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/i-a6/!svn/ver/51/thedeployer/libs/XSV/compile/QName.py
+END
+Component.py
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/i-a6/!svn/ver/51/thedeployer/libs/XSV/compile/Component.py
+END
+Attribute.py
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/i-a6/!svn/ver/51/thedeployer/libs/XSV/compile/Attribute.py
+END
+Restriction.py
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/i-a6/!svn/ver/51/thedeployer/libs/XSV/compile/Restriction.py
+END
+ComplexType.py
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/i-a6/!svn/ver/51/thedeployer/libs/XSV/compile/ComplexType.py
+END
+SchemaError.py
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/i-a6/!svn/ver/51/thedeployer/libs/XSV/compile/SchemaError.py
+END
+Annotation.py
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/i-a6/!svn/ver/51/thedeployer/libs/XSV/compile/Annotation.py
+END
+List.py
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/i-a6/!svn/ver/51/thedeployer/libs/XSV/compile/List.py
+END
+KCons.py
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/i-a6/!svn/ver/51/thedeployer/libs/XSV/compile/KCons.py
+END
+ListFacet.py
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/i-a6/!svn/ver/51/thedeployer/libs/XSV/compile/ListFacet.py
+END
+AttributeGroup.py
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/i-a6/!svn/ver/51/thedeployer/libs/XSV/compile/AttributeGroup.py
+END
+VMapping.py
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/i-a6/!svn/ver/51/thedeployer/libs/XSV/compile/VMapping.py
+END
+Facet.py
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/i-a6/!svn/ver/51/thedeployer/libs/XSV/compile/Facet.py
+END
+FSM.py
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/i-a6/!svn/ver/51/thedeployer/libs/XSV/compile/FSM.py
+END
+Ur.py
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/i-a6/!svn/ver/51/thedeployer/libs/XSV/compile/Ur.py
+END
+Union.py
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/i-a6/!svn/ver/51/thedeployer/libs/XSV/compile/Union.py
+END
+SimType.py
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/i-a6/!svn/ver/51/thedeployer/libs/XSV/compile/SimType.py
+END
+SimpleType.py
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/i-a6/!svn/ver/51/thedeployer/libs/XSV/compile/SimpleType.py
+END
+Group.py
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/i-a6/!svn/ver/51/thedeployer/libs/XSV/compile/Group.py
+END
+DDummy.py
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/i-a6/!svn/ver/51/thedeployer/libs/XSV/compile/DDummy.py
+END
+NumFacet.py
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/i-a6/!svn/ver/51/thedeployer/libs/XSV/compile/NumFacet.py
+END
+Particle.py
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/i-a6/!svn/ver/51/thedeployer/libs/XSV/compile/Particle.py
+END
+Init.py
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/i-a6/!svn/ver/51/thedeployer/libs/XSV/compile/Init.py
+END
+AnyAttribute.py
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/i-a6/!svn/ver/51/thedeployer/libs/XSV/compile/AnyAttribute.py
+END
+AttributeUse.py
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/i-a6/!svn/ver/51/thedeployer/libs/XSV/compile/AttributeUse.py
+END
+Type.py
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/i-a6/!svn/ver/51/thedeployer/libs/XSV/compile/Type.py
+END
+SSchema.py
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/i-a6/!svn/ver/51/thedeployer/libs/XSV/compile/SSchema.py
+END

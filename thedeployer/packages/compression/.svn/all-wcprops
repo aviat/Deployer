@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/i-a6/!svn/ver/152/thedeployer/packages/compression
+END
+compress.py
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/i-a6/!svn/ver/152/thedeployer/packages/compression/compress.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/i-a6/!svn/ver/36/thedeployer/packages/compression/__init__.py
+END
+decompress.py
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/i-a6/!svn/ver/152/thedeployer/packages/compression/decompress.py
+END

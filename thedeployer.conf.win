@@ -1,0 +1,14 @@
+[bin]
+
+rsync = bin/rsync/rsync.exe
+mysqldump = bin/mysql/mysqldump.exe
+mysql = bin/mysql/mysql.exe
+
+[logs]
+
+log = thedeployer.log
+backtrace = thedeployer-bt.log
+
+# allowed level values are 0, 10, 20, 30, 40 and 50. They correspond to the
+# levels NOTSET, DEBUG, INFO, WARNING, ERROR and CRITICAL, respectively.
+level = 10

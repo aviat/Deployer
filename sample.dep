@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<project name="test">
+	<defaults>
+		<default name="retry" value="3"/>
+	</defaults>
+
+<!--	<variables>
+		<argument name="abc"/>
+		<argument name="def"/>
+		<argument name="a.b" required="false"/>
+		<properties file="sample.properties" />
+	</variables>-->
+
+	<servers>
+		<server:local id="local" root="/home/leaf/i-a6/" />
+
+		<server:web id="web" address="vtest1.info" document_root="/public_html/" language="php5" />
+		<!--<ftp os="linux" id="ftp" host="vtest1.info" port="21" username="vtest1" password="t2s6lwPsdaSg" webserver="web" root="/public_html" />-->
+
+		<!--<sftp os="linux" id="sftp" host="localhost" port="22" username="leaf" password="rdc123" />-->
+		<!--<ssh os="linux" id="ssh" host="localhost" port="22" username="leaf" password="rdc123" />-->
+
+		<server:mysql id="mysql" host="127.0.0.1" username="root" password="mysqldev" />
+		<server:subversion id="subversion" repository_path="http://code.vimov.com/svn/test" username="" password="" />
+	</servers>
+
+	<filesets>
+		<fileset name="set1">
+			<match type="file" />
+			<match directory="/tmp/y" pattern="[pattern\n]" />
+		</fileset>
+		<fileset name="set2">
+			<match directory="/tmp/m" pattern="{.(*)}" />
+			<match directory="/tmp/n" pattern="[pattern\n]" />
+		</fileset>
+	</filesets>
+
+	<targets>
+		<target name="target1">
+			<task name="x">
+				<system:execute destination="local" command="ls ${abc} -al"/>
+				<!--<ftpsync source="local" destination="ftp" from="/tmp/tests" to="tests" />-->
+				<!--<copy source="local" destination="ftp" from="/tmp/tests" to="/public_html" recursive="true" />-->
+				<!--<db:create destination="mysql" name="QQQ" />-->
+				<!--<db:drop destination="mysql" name="QQQ" if_exists="False" />-->
+				<!--<db:sql destination="mysql" statements="QQQ" database="test">
+					<list name="QQQ">
+						<entry value="delete from email_setting;" />
+						<entry value="insert into email_setting values ('1', '2', '3');" />
+					</list>
+				</db:sql>-->
+				<!--<vc:export source="subversion" destination="local" from="/" to="/tmp/xxx4" revision="2" />-->
+
+<!--				<mysqldump source="mysql" destination="local" to="dump.sql" databases="xxx" tables="qqq">
+					<list name="xxx">
+						<entry value="labs"/>
+					</list>
+					<list name="qqq">
+						<entry value="wp_comments"/>
+						<entry value="wp_links"/>
+					</list>
+				</mysqldump>-->
+				<!--<mysqlimport source="local" destination="mysql" from="/tmp/dump.sql" to="job_applications"/>-->
+				<!--				<download destination="local" from="http://www.wordpress.org/latest.tar.gz" to="/tmp/" />-->
+				<fs:compress replace="true" source="local" destination="local" from="/home/leaf/Public" to="/home/leaf/mody.tar.gz" excludes="set1">
+					<fileset name="set1">
+						<match  pattern="{.(*)}" />
+						<match directory="/tmp/b" pattern="[pattern\n]" />
+					</fileset>
+					<fileset name="set2">
+						<match directory="/tmp/c" pattern="{.(*)}" />
+						<match directory="/tmp/d" pattern="[pattern\n]" />
+					</fileset>
+				</fs:compress>
+<!--				<compress replace="true" source="local" destination="local" from="/home/leaf/test" to="/home/leaf/test.tar" />-->
+<!--				<chmod destination="local" path="temp.txt" permissions="0654" />-->
+			</task>
+		</target>
+	</targets>
+</project>

@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/i-a6/!svn/ver/148/thedeployer/packages/clients/versioncontrol
+END
+versioncontrolsystemclient.py
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/i-a6/!svn/ver/148/thedeployer/packages/clients/versioncontrol/versioncontrolsystemclient.py
+END
+subversionclient.py
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/i-a6/!svn/ver/148/thedeployer/packages/clients/versioncontrol/subversionclient.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/i-a6/!svn/ver/102/thedeployer/packages/clients/versioncontrol/__init__.py
+END

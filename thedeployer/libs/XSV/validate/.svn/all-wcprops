@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/i-a6/!svn/ver/107/thedeployer/libs/XSV/validate
+END
+validateAttribute.py
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/i-a6/!svn/ver/51/thedeployer/libs/XSV/validate/validateAttribute.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/i-a6/!svn/ver/51/thedeployer/libs/XSV/validate/__init__.py
+END
+verror.py
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/i-a6/!svn/ver/51/thedeployer/libs/XSV/validate/verror.py
+END
+assess.py
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/i-a6/!svn/ver/51/thedeployer/libs/XSV/validate/assess.py
+END
+component.py
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/i-a6/!svn/ver/51/thedeployer/libs/XSV/validate/component.py
+END
+validateKey.py
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/i-a6/!svn/ver/51/thedeployer/libs/XSV/validate/validateKey.py
+END
+validateElement.py
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/i-a6/!svn/ver/51/thedeployer/libs/XSV/validate/validateElement.py
+END

@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/i-a6/!svn/ver/145/thedeployer/bin/win32/mysql
+END
+mysql.exe
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/i-a6/!svn/ver/145/thedeployer/bin/win32/mysql/mysql.exe
+END
+mysqldump.exe
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/i-a6/!svn/ver/145/thedeployer/bin/win32/mysql/mysqldump.exe
+END
